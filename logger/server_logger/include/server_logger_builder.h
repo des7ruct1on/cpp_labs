@@ -15,7 +15,7 @@
     #define STREAM "/dev/tty"
     #include <unistd.h>
     #include <mqueue.h>
-    #include <fcntl.h>
+    #include <sys/fcntl.h>
     #include <sys/stat.h>
     #include <sys/types.h>
 #endif
@@ -28,30 +28,21 @@ public:
 
     server_logger_builder();
 
-    server_logger_builder(
-        server_logger_builder const &other);
+    server_logger_builder(server_logger_builder const &other);
 
-    server_logger_builder &operator=(
-        server_logger_builder const &other);
+    server_logger_builder &operator=(server_logger_builder const &other);
 
-    server_logger_builder(
-        server_logger_builder &&other) noexcept;
+    server_logger_builder(server_logger_builder &&other) noexcept;
 
-    server_logger_builder &operator=(
-        server_logger_builder &&other) noexcept;
+    server_logger_builder &operator=(server_logger_builder &&other) noexcept;
 
     ~server_logger_builder() noexcept override;
 
-    logger_builder *add_file_stream(
-        std::string const &stream_file_path,
-        logger::severity severity) override;
+    logger_builder *add_file_stream(std::string const &stream_file_path, logger::severity severity) override;
 
-    logger_builder *add_console_stream(
-        logger::severity severity) override;
+    logger_builder *add_console_stream(logger::severity severity) override;
 
-    logger_builder* transform_with_configuration(
-        std::string const &configuration_file_path,
-        std::string const &configuration_path) override;
+    logger_builder* transform_with_configuration(std::string const &configuration_file_path, std::string const &configuration_path) override;
 
     logger_builder *clear() override;
 

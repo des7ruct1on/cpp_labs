@@ -68,5 +68,69 @@ server_logger::~server_logger() noexcept {
 }
 
 logger const *server_logger::log(const std::string &text, logger::severity severity) const noexcept {
+    size_t meta_size = sizeof(bool) + sizeof(size_t) + sizeof(pid_t);
+    size_t msg_size = MESSAGE_SIZE - meta_size;
+    size_t msg_count = text.size() / msg_size + 1;
+    for (auto it = queues.begin(); it != queues.end(); ++it) {
+        auto &path = it->first;
+        auto &pr = it->second;
+        if (pr.second.find(severity) == pr.second.end()) continue;
+        const char* severity_str = severity_to_string(severity).c_str();
+        char buffer[MESSAGE_SIZE];
+        char* ptr = buffer;
+
+
+        *reinterpret_cast<bool* >(ptr) = false;
+        ptr += sizeof(bool);
+        *reinterpret_cast<pid_t* >(ptr) = process_id;
+        ptr += sizeof(pid_t);
+        *reinterpret_cast<size_t* >(ptr) = session_id;
+        ptr += sizeof(size_t);
+        *reinterpret_cast<size_t* >(ptr) = msg_count;
+        ptr += sizeof(size_t);
+
+        srcpy(ptr, severity_str);
+#ifdef _WIN32
+        DWORD bytes_count;
+        WriteFile(pr.first, buffer, MESSAGE_SIZE, &bytes_count, nullptr);
+
+#else
+        mq_send(pr.first, buffer, MESSAGE_SIZE, 0);
+
+#endif
+
+        for (int i = 0; i < msg_count; i++) {
+            char tmp_msg[MESSAGE_SIZE];
+            ptr = tmp_msg;
+            *reinterpret_cast<bool* >(ptr) = true;
+            ptr += sizeof(bool);
+            *reinterpret_cast<pid_t* >(ptr) = process_id;
+            ptr += sizeof(pid_t);
+            *reinterpret_cast<size_t* >(ptr) = session_id;
+            ptr += sizeof(size_t);
+
+            size_t position = msg_size * i;
+            size_t left_size = test.size() - position;
+            size_t substr_size;
+            if (left_size < msg_size) {
+                substr_size = left_size;
+            } else {
+                substr_size = msg_size;
+            }
+
+            memcpy(ptr, text.substr(pos, substr_size).c_str(), substr_size);
+            *(ptr + substr_size) = '\0';
+
+#ifdef _WIN32
+        WriteFile(pr.first, tmp_msg, MESSAGE_SIZE, &bytes_count, nullptr);
+
+#else
+        mq_send(pr.first, tmp_msg, MESSAGE_SIZE, 0);
+
+#endif
+        }
+    }
+    session_id++;
+    return this;
 
 }

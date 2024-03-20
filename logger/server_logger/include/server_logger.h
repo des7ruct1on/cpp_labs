@@ -40,8 +40,7 @@ public:
 
     ~server_logger() noexcept final;
 
-    [[nodiscard]] logger const *log(const std::string &message,
-        logger::severity severity) const noexcept override;
+    [[nodiscard]] logger const *log(const std::string &message, logger::severity severity) const noexcept override;
 
 };
 
