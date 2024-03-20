@@ -2,11 +2,28 @@
 #define MATH_PRACTICE_AND_OPERATING_SYSTEMS_SERVER_LOGGER_BUILDER_H
 
 #include <logger_builder.h>
+#include <cstring>
+#include "../../../common/mini/ini.h"
+#include "../../logger/include/logger_builder.h"
+#include "server_logger.h"
 
-class server_logger_builder final:
-    public logger_builder
-{
+#ifdef _WIN32
+    #define STREAM "CONSOLE"
+    #include <conio.h>
+    #include <windows.h>
+#else
+    #define STREAM "/dev/tty"
+    #include <unistd.h>
+    #include <mqueue.h>
+    #include <fcntl.h>
+    #include <sys/stat.h>
+    #include <sys/types.h>
+#endif
 
+
+
+class server_logger_builder final: public logger_builder {
+    std::map<std::string, std::set<logger::severity>> keys;
 public:
 
     server_logger_builder();
@@ -25,8 +42,6 @@ public:
 
     ~server_logger_builder() noexcept override;
 
-public:
-
     logger_builder *add_file_stream(
         std::string const &stream_file_path,
         logger::severity severity) override;
@@ -44,4 +59,4 @@ public:
 
 };
 
-#endif //MATH_PRACTICE_AND_OPERATING_SYSTEMS_SERVER_LOGGER_BUILDER_H
+#endif
