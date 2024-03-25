@@ -5,6 +5,7 @@
 #include <logger.h>
 #include <logger_guardant.h>
 #include <typename_holder.h>
+#include <cstdint>
 
 class allocator_global_heap final: public allocator, private logger_guardant, private typename_holder {
 
