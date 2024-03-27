@@ -20,8 +20,9 @@ TEST(allocatorGlobalHeapTests, test1)
     allocator *allocator_another_instance = new allocator_global_heap(logger_instance);
     allocator_another_instance->deallocate(block);
     delete allocator_another_instance;
-    
+
     delete logger_instance;
+
 }
 
 TEST(allocatorGlobalHeapTests, test2)

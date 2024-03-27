@@ -1,0 +1,19 @@
+{
+    "files":
+    [
+        [
+            "file_one",
+            [
+                "WARNING",
+                "DEBUG"
+            ]
+        ],
+        [
+            "file_two",
+            [
+                "WARNING",
+                "ERROR"
+            ]
+        ]
+    ]
+}

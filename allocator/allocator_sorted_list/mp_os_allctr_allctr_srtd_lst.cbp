@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mp_os_allctr_allctr_srtd_lst"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\_deps\;CMake Files\_deps\googletest-src\;CMake Files\_deps\googletest-src\googlemock\;CMake Files\_deps\googletest-src\googlemock\cmake\;CMake Files\_deps\googletest-src\googletest\;CMake Files\_deps\googletest-src\googletest\cmake\;CMake Files\_deps\json-src\;CMake Files\_deps\json-src\cmake\;CMake Files\allocator\;CMake Files\allocator\allocator\;CMake Files\allocator\allocator_boundary_tags\;CMake Files\allocator\allocator_boundary_tags\tests\;CMake Files\allocator\allocator_buddies_system\;CMake Files\allocator\allocator_buddies_system\tests\;CMake Files\allocator\allocator_global_heap\;CMake Files\allocator\allocator_global_heap\tests\;CMake Files\allocator\allocator_red_black_tree\;CMake Files\allocator\allocator_red_black_tree\tests\;CMake Files\allocator\allocator_sorted_list\;CMake Files\allocator\allocator_sorted_list\tests\;CMake Files\associative_container\;CMake Files\associative_container\search_tree\;CMake Files\associative_container\search_tree\binary_search_tree\;CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\;CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\;CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\;CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\;CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\tests\;CMake Files\common\;CMake Files\logger\;CMake Files\logger\client_logger\;CMake Files\logger\client_logger\tests\;CMake Files\logger\logger\;CMake Files\logger\server_logger\;CMake Files\logger\server_logger\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/libmp_os_allctr_allctr_srtd_lst.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/libmp_os_allctr_allctr_srtd_lst.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/src/allocator_sorted_list.cpp">
+			<Option target="mp_os_allctr_allctr_srtd_lst"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/allocator_sorted_list_tests.cpp">
+			<Option target="mp_os_allctr_allctr_srtd_lst_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\json-src\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/cmake/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_boundary_tags\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_boundary_tags\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_buddies_system\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_buddies_system\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_global_heap\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_global_heap\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_red_black_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_red_black_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_sorted_list\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_sorted_list\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\common\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\client_logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\client_logger\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\server_logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\server_logger\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

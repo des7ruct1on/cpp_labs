@@ -3,6 +3,9 @@
 
 #include <logger.h>
 #include "client_logger_builder.h"
+#include <map>
+#include <set>
+#include <fstream>
 
 class client_logger final: public logger {
 
@@ -16,6 +19,8 @@ public:
     client_logger(client_logger const &other);
 
     client_logger(const std::map<std::string, std::set<logger::severity>> &paths, const std::string &_struct_of_log);
+
+    void end_streams();
 
     void message_format(std::string &to_format, const std::string &flag, const std::string &replace_with) const noexcept;
 

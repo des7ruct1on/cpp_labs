@@ -13,12 +13,16 @@ client_logger_builder &client_logger_builder::operator=(client_logger_builder &&
 client_logger_builder::~client_logger_builder() noexcept = default;
 
 logger_builder *client_logger_builder::add_file_stream(std::string const &stream_file_path, logger::severity severity) {
+    char new_path[128];
+    realpath(stream_file_path.c_str(), new_path);
+    std::string new_path_str = new_path;
+    
     paths[stream_file_path].insert(severity);
     return this;
 }
 
 logger_builder *client_logger_builder::add_console_stream(logger::severity severity) {
-    paths["console"].insert(severity);
+    paths["/console"].insert(severity);
     return this;
 }
 
@@ -59,5 +63,5 @@ logger_builder *client_logger_builder::clear() {
 }
 
 logger *client_logger_builder::build() const {
-    return new client_logger(paths, struct_of_log)
+    return new client_logger(paths, struct_of_log);
 }

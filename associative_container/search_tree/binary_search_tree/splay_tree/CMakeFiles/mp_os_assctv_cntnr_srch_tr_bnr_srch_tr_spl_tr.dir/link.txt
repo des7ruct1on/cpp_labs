@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.a

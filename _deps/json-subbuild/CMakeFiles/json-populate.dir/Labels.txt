@@ -1,0 +1,14 @@
+# Target labels
+ json-populate
+# Source files and their labels
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/CMakeFiles/json-populate
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/CMakeFiles/json-populate.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/CMakeFiles/json-populate-complete.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-build.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-configure.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-download.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-install.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-mkdir.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-patch.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-test.rule
+/Users/ivan/Desktop/c++/cpp_labs/_deps/json-subbuild/json-populate-prefix/src/json-populate-stamp/json-populate-update.rule

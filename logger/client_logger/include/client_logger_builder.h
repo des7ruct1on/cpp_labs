@@ -4,6 +4,9 @@
 #include "client_logger.h"
 #include <logger_builder.h>
 #include <nlohmann/json.hpp>
+#include <map>
+#include <set>
+#include <fstream>
 
 class client_logger_builder final: public logger_builder {
     std::map<std::string, std::set<logger::severity>> paths;

@@ -1,0 +1,1710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mp_os"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\_deps\;CMake Files\_deps\googletest-src\;CMake Files\_deps\googletest-src\googlemock\;CMake Files\_deps\googletest-src\googlemock\cmake\;CMake Files\_deps\googletest-src\googletest\;CMake Files\_deps\googletest-src\googletest\cmake\;CMake Files\_deps\json-src\;CMake Files\_deps\json-src\cmake\;CMake Files\allocator\;CMake Files\allocator\allocator\;CMake Files\allocator\allocator_boundary_tags\;CMake Files\allocator\allocator_boundary_tags\tests\;CMake Files\allocator\allocator_buddies_system\;CMake Files\allocator\allocator_buddies_system\tests\;CMake Files\allocator\allocator_global_heap\;CMake Files\allocator\allocator_global_heap\tests\;CMake Files\allocator\allocator_red_black_tree\;CMake Files\allocator\allocator_red_black_tree\tests\;CMake Files\allocator\allocator_sorted_list\;CMake Files\allocator\allocator_sorted_list\tests\;CMake Files\associative_container\;CMake Files\associative_container\search_tree\;CMake Files\associative_container\search_tree\binary_search_tree\;CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\;CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\;CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\;CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\;CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\tests\;CMake Files\associative_container\search_tree\binary_search_tree\tests\;CMake Files\common\;CMake Files\logger\;CMake Files\logger\client_logger\;CMake Files\logger\client_logger\tests\;CMake Files\logger\logger\;CMake Files\logger\server_logger\;CMake Files\logger\server_logger\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="list_install_components">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/local">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="install/strip">
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/libmp_os_allctr_allctr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/libmp_os_allctr_allctr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bndr_tgs">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/libmp_os_allctr_allctr_bndr_tgs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bndr_tgs"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bndr_tgs/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/libmp_os_allctr_allctr_bndr_tgs.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bndr_tgs/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bndr_tgs_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/mp_os_allctr_allctr_bndr_tgs_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bndr_tgs_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bndr_tgs_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/mp_os_allctr_allctr_bndr_tgs_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bndr_tgs_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gmock_main/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gtest_main/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/lib/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-build/googletest/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bdds_sstm">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/libmp_os_allctr_allctr_bdds_sstm.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bdds_sstm"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bdds_sstm/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/libmp_os_allctr_allctr_bdds_sstm.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bdds_sstm/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bdds_sstm_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/mp_os_allctr_allctr_bdds_sstm_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bdds_sstm_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_bdds_sstm_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/mp_os_allctr_allctr_bdds_sstm_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_bdds_sstm_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_glbl_hp">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/libmp_os_allctr_allctr_glbl_hp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_glbl_hp"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_glbl_hp/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/libmp_os_allctr_allctr_glbl_hp.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_glbl_hp/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_glbl_hp_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/mp_os_allctr_allctr_glbl_hp_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_glbl_hp_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_glbl_hp_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/mp_os_allctr_allctr_glbl_hp_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_glbl_hp_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_rb_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/libmp_os_allctr_allctr_rb_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_rb_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_rb_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/libmp_os_allctr_allctr_rb_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_rb_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_rb_tr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/mp_os_allctr_allctr_rb_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_rb_tr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_rb_tr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/mp_os_allctr_allctr_rb_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_rb_tr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/libmp_os_allctr_allctr_srtd_lst.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/libmp_os_allctr_allctr_srtd_lst.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_allctr_allctr_srtd_lst_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/mp_os_allctr_allctr_srtd_lst_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 mp_os_allctr_allctr_srtd_lst_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/libmp_os_assctv_cntnr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/libmp_os_assctv_cntnr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/libmp_os_assctv_cntnr_srch_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/libmp_os_assctv_cntnr_srch_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_cmmn">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/common/libmp_os_cmmn.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/common"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 mp_os_cmmn"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_cmmn/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/common/libmp_os_cmmn.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/common"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 mp_os_cmmn/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/common/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_clnt_lggr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/libmp_os_lggr_clnt_lggr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 mp_os_lggr_clnt_lggr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_clnt_lggr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/libmp_os_lggr_clnt_lggr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 mp_os_lggr_clnt_lggr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_clnt_lggr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 mp_os_lggr_clnt_lggr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_clnt_lggr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/mp_os_lggr_clnt_lggr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 mp_os_lggr_clnt_lggr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_lggr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/libmp_os_lggr_lggr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/logger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 mp_os_lggr_lggr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_lggr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/libmp_os_lggr_lggr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/logger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 mp_os_lggr_lggr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/logger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_srvr_lggr">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/libmp_os_lggr_srvr_lggr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 mp_os_lggr_srvr_lggr"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_srvr_lggr/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/libmp_os_lggr_srvr_lggr.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 mp_os_lggr_srvr_lggr/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_srvr_lggr_tests">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/mp_os_lggr_srvr_lggr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 mp_os_lggr_srvr_lggr_tests"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mp_os_lggr_srvr_lggr_tests/fast">
+				<Option output="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/mp_os_lggr_srvr_lggr_tests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/common/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/./include"/>
+					<Add directory="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/./include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"/>
+					<Add directory="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 mp_os_lggr_srvr_lggr_tests/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/src/allocator_guardant.cpp">
+			<Option target="mp_os_allctr_allctr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/src/allocator_test_utils.cpp">
+			<Option target="mp_os_allctr_allctr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/src/allocator_boundary_tags.cpp">
+			<Option target="mp_os_allctr_allctr_bndr_tgs"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/allocator_boundary_tags_tests.cpp">
+			<Option target="mp_os_allctr_allctr_bndr_tgs_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/src/allocator_buddies_system.cpp">
+			<Option target="mp_os_allctr_allctr_bdds_sstm"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/allocator_buddies_system_tests.cpp">
+			<Option target="mp_os_allctr_allctr_bdds_sstm_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/src/allocator_global_heap.cpp">
+			<Option target="mp_os_allctr_allctr_glbl_hp"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/allocator_global_heap_tests.cpp">
+			<Option target="mp_os_allctr_allctr_glbl_hp_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/src/allocator_red_black_tree.cpp">
+			<Option target="mp_os_allctr_allctr_rb_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/allocator_red_black_tree_tests.cpp">
+			<Option target="mp_os_allctr_allctr_rb_tr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/src/allocator_sorted_list.cpp">
+			<Option target="mp_os_allctr_allctr_srtd_lst"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/allocator_sorted_list_tests.cpp">
+			<Option target="mp_os_allctr_allctr_srtd_lst_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/include/associative_container.h">
+			<Option target="mp_os_assctv_cntnr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/include/AVL_tree.h">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/AVL_tree_tests.cpp">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/include/binary_search_tree.h">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/include/red_black_tree.h">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/red_black_tree_tests.cpp">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_rb_tr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/include/scapegoat_tree.h">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/scapegoat_tree_tests.cpp">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_scpgt_tr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/include/splay_tree.h">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/splay_tree_tests.cpp">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/binary_search_tree_tests.cpp">
+			<Option target="mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/include/search_tree.h">
+			<Option target="mp_os_assctv_cntnr_srch_tr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/common/src/not_implemented.cpp">
+			<Option target="mp_os_cmmn"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/common/src/operation_not_supported.cpp">
+			<Option target="mp_os_cmmn"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/src/client_logger.cpp">
+			<Option target="mp_os_lggr_clnt_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/src/client_logger_builder.cpp">
+			<Option target="mp_os_lggr_clnt_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/client_logger_tests.cpp">
+			<Option target="mp_os_lggr_clnt_lggr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/src/logger.cpp">
+			<Option target="mp_os_lggr_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/src/logger_builder.cpp">
+			<Option target="mp_os_lggr_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/src/logger_guardant.cpp">
+			<Option target="mp_os_lggr_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/src/server_logger.cpp">
+			<Option target="mp_os_lggr_srvr_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/src/server_logger_builder.cpp">
+			<Option target="mp_os_lggr_srvr_lggr"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/server_logger_tests.cpp">
+			<Option target="mp_os_lggr_srvr_lggr_tests"/>
+		</Unit>
+		<Unit filename="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock/src/gmock-all.cc">
+			<Option target="gmock"/>
+		</Unit>
+		<Unit filename="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googlemock/src/gmock_main.cc">
+			<Option target="gmock_main"/>
+		</Unit>
+		<Unit filename="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/src/gtest-all.cc">
+			<Option target="gtest"/>
+		</Unit>
+		<Unit filename="/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/src/gtest_main.cc">
+			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googlemock/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googlemock/cmake/gmock.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googlemock/cmake/gmock_main.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googlemock\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/Config.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/gtest.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/gtest_main.pc.in">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/googletest-src/googletest/cmake/internal_utils.cmake">
+			<Option virtualFolder="CMake Files\_deps\googletest-src\googletest\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\_deps\json-src\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/_deps/json-src/cmake/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_boundary_tags\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_boundary_tags/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_boundary_tags\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_buddies_system\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_buddies_system/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_buddies_system\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_global_heap\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_global_heap/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_global_heap\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_red_black_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_red_black_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_red_black_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_sorted_list\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\allocator\allocator_sorted_list\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\AVL_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/red_black_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\red_black_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/scapegoat_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\scapegoat_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/splay_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\splay_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\associative_container\search_tree\binary_search_tree\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\common\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\client_logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/client_logger/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\client_logger\tests\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\server_logger\"/>
+		</Unit>
+		<Unit filename="/Users/ivan/Desktop/c++/cpp_labs/logger/server_logger/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\logger\server_logger\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
