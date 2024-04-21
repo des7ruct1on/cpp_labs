@@ -1,5 +1,8 @@
-28.03.2024  01:18:42 DEBUG allocator_global_heap allocation has started
-28.03.2024  01:18:42 DEBUG allocator_global_heap allocation has ended
-28.03.2024  01:18:42 DEBUG allocator_global_heap deallocation has started
-28.03.2024  01:18:42 DEBUG bytes before free: 
-28.03.2024  01:18:42 DEBUG allocator_global_heap deallocation has ended
+[DEBUG] allocator_global_heap allocation has started
+
+[DEBUG] allocator_global_heap allocation has ended
+
+[DEBUG] allocator_global_heap deallocation has started
+
+[DEBUG] allocator_global_heap deallocation has ended
+

@@ -4,6 +4,8 @@
 #include <cstring>
 #include "../../logger/include/logger.h"
 #include "server_logger_builder.h"
+
+
 #define MESSAGE_SIZE 1024
 class server_logger final: public logger {
 
@@ -18,9 +20,9 @@ class server_logger final: public logger {
 
     DWORD process_id;
 #else
-    std::map<std::string, std::pair<mqd_t, std::set<logger::severity>>> queues;
+    std::map<std::string, std::pair<msqid_ds, std::set<logger::severity>>> queues;
 
-    static std::map<std::string, std::pair<mqd_t, size_t>> queues_users;
+    static std::map<std::string, std::pair<msqid_ds, size_t>> queues_users;
 
     pid_t process_id;
 #endif

@@ -1,17 +1,34 @@
 #ifndef MATH_PRACTICE_AND_OPERATING_SYSTEMS_CLIENT_LOGGER_BUILDER_H
 #define MATH_PRACTICE_AND_OPERATING_SYSTEMS_CLIENT_LOGGER_BUILDER_H
 
-#include "client_logger.h"
-#include <logger_builder.h>
 #include <nlohmann/json.hpp>
-#include <map>
-#include <set>
 #include <fstream>
 
-class client_logger_builder final: public logger_builder {
-    std::map<std::string, std::set<logger::severity>> paths;
+#include <map>
+#include <set>
 
-    std::string struct_of_log;
+#include <logger_builder.h>
+#include <client_logger.h>
+#define CONSOLE "CON"
+#ifdef _WIN32
+    #define CONSOLE "CON"
+#elif __linux__
+    #define CONSOLE "/dev/tty"
+#else
+#endif
+
+class client_logger_builder final:
+    public logger_builder
+{
+
+    std::map<std::string, std::set<logger::severity>> _streams;
+
+    std::string _format;
+
+public:
+
+    logger_builder * set_format(std::string &format);
+
 public:
 
     client_logger_builder();
@@ -26,7 +43,7 @@ public:
 
     ~client_logger_builder() noexcept override;
 
-    logger_builder *change_log_structure(const std::string &_struct_of_log) noexcept;
+public:
 
     logger_builder *add_file_stream(std::string const &stream_file_path, logger::severity severity) override;
 

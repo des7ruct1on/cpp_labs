@@ -1,109 +1,106 @@
 #include "../include/client_logger.h"
 
-std::map<std::string, std::pair<std::ofstream, size_t>> client_logger::user_streams = std::map<std::string, std::pair<std::ofstream, size_t>>();
+std::map<std::string, std::pair<std::ofstream, int>> client_logger::_streams_users = std::map<std::string, std::pair<std::ofstream, int>>();
 
-client_logger::client_logger(client_logger const &other) 
-    : struct_of_log(other.struct_of_log),
-    size_struct_of_log(other.size_struct_of_log),
-    streams(other.streams) 
+client_logger::client_logger(std::map<std::string, std::set<logger::severity>> streams, std::string format)
 {
-    for (auto &[path, severities] : streams) {
-        user_streams[path].second++;
-    }
-}
-
-void client_logger::end_streams() {
-    for (auto &[path, severities] : streams) {
-        if (!--user_streams[path].second) {
-            user_streams[path].first.close();
-            user_streams.erase(path);
+    std::runtime_error file_opening("Failed to open stream\n");
+    for (auto &[file_name, severities] : streams)
+    {
+        if (_streams_users.find(file_name) != _streams_users.end() && _streams_users[file_name].second != 0) _streams[file_name] = severities;
+        else
+        {
+            _streams_users[file_name].first.open(file_name);
+            if (!(_streams_users[file_name].first.is_open())) throw file_opening;
+            _streams[file_name] = severities;
         }
+        (_streams_users[file_name].second)++;
     }
+    _format = format;
 }
 
-client_logger::client_logger(const std::map<std::string, std::set<logger::severity>> &paths, const std::string &_struct_of_log)
-: struct_of_log(_struct_of_log), size_struct_of_log(_struct_of_log.size())
+client_logger::client_logger(client_logger const &other) :
+    _format(other._format), _streams(other._streams)
 {
-
-    for (auto &[path, severities] : paths) {
-        if (user_streams.find(path) == user_streams.end()) {
-            if (path != "/console") {
-                user_streams[path].first.open(path);
-                if (!user_streams[path].first.is_open()) {
-                    throw std::runtime_error("Unable to open " + path);
-                }
-            }
-            user_streams[path].second = 1;
-        } else  {
-            user_streams[path].second++;
-        }
-        streams[path] = severities;
-    }
+    for (auto &[key, pair] : _streams_users) pair.second++;
 }
 
-client_logger &client_logger::operator=(client_logger const &other) {
+client_logger &client_logger::operator=(client_logger const &other)
+{
     if (this == &other) return *this;
-    end_streams();
-    streams = other.streams;
-    struct_of_log = other.struct_of_log;
-    size_struct_of_log = other.size_struct_of_log;
-
-    for (auto &[path, pair] : streams) {
-        user_streams[path].second++;
-    }
+    close_streams();
+    _streams = other._streams;
+    _format = other._format;
+    for (auto &[key, pair] : _streams) _streams_users[key].second++;
     return *this;
 }
 
-client_logger::client_logger(client_logger &&other) noexcept 
-    :streams(std::move(other.streams)),
-    struct_of_log(std::move(other.struct_of_log)),
-    size_struct_of_log(std::move(other.size_struct_of_log)) {}
+client_logger::client_logger(client_logger &&other) noexcept :
+    _streams(std::move(other._streams)), _format(std::move(other._format)) {}
 
-client_logger &client_logger::operator=(client_logger &&other) noexcept {
+client_logger &client_logger::operator=(client_logger &&other) noexcept
+{
     if (this == &other) return *this;
-
-    end_streams();
-
-    streams = std::move(other.streams);
-    struct_of_log = std::move(other.struct_of_log);
-    size_struct_of_log = std::move(other.size_struct_of_log);
-
+    close_streams();
+    _format = std::move(other._format);
+    _streams = std::move(other._streams);
     return *this;
 }
 
-client_logger::~client_logger() noexcept {
-    end_streams();
-}
-
-void client_logger::message_format(std::string &to_format, std::string const &flag, std::string const &replace) const noexcept {
-    for (auto pos = 0; pos != std::string::npos;){
-        pos = to_format.find(flag, pos);
-        if (pos != std::string::npos) {
-            to_format.replace(pos, flag.size(), replace);
-            pos += replace.size();
+void client_logger::close_streams()
+{
+    for (auto &[file_name, severities] : _streams)
+    {
+        if ((--_streams_users[file_name].second) == 0)
+        {
+            _streams_users[file_name].first.close();
+            _streams_users.erase(file_name);
         }
     }
 }
 
-logger const *client_logger::log(const std::string &text, logger::severity severity) const noexcept {
-    std::string datetime_str = current_datetime_to_string();
-    auto sep = datetime_str.find(' ');
-    std::string date = datetime_str.substr(0, sep);
-    std::string time = datetime_str.substr(sep);
-    for (auto &[path, severities] : streams) {
-        if (severities.find(severity) == severities.end()) continue;
+client_logger::~client_logger() noexcept
+{
+    close_streams();
+}
 
-        std::string message_log = struct_of_log;
-        message_format(message_log, "%d", date);
-        message_format(message_log, "%t", time);
-        message_format(message_log, "%s", severity_to_string(severity));
-        message_format(message_log, "%m", text);
-        if (user_streams[path].first.is_open()) {
-            user_streams[path].first << message_log;
-        } else {
-            std::cout << message_log;
-        }
+void replace_substring(std::string &str, const std::string &to_replace, const std::string &replace_with)
+{
+    size_t pos = 0;
+    while ((pos = str.find(to_replace, pos)) != std::string::npos)
+    {
+        str.replace(pos, to_replace.size(), replace_with);
+        pos += replace_with.size();
+    }
+}
 
+void format_to_message(std::string &replaced_format, const std::string &message, const std::string & string_severity)
+{
+    time_t time_now = time(NULL);
+    char tmp_date_time[20];
+
+    std::string msg = "%m";
+    std::string sev = "%s";
+    std::string dt = "%d";
+    std::string tm = "%t";
+
+    replace_substring(replaced_format, msg, message);
+    replace_substring(replaced_format, sev, string_severity);
+    strftime(tmp_date_time, sizeof(tmp_date_time), "%T", localtime(&time_now));
+    replace_substring(replaced_format, tm, tmp_date_time);
+    strftime(tmp_date_time, sizeof(tmp_date_time), "%F", localtime(&time_now));
+    replace_substring(replaced_format, dt, tmp_date_time);
+}
+
+logger const *client_logger::log(const std::string &text, logger::severity severity) const noexcept
+{
+    std::string string_severity = severity_to_string(severity);
+    std::string message = _format;
+    format_to_message(message, text, string_severity);
+
+    for (auto & [file_name, severities] : _streams)
+    {
+        if (severities.find(severity) != severities.end()) _streams_users[file_name].first << message << std::endl;
     }
     return this;
 }

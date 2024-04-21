@@ -18,43 +18,28 @@ public:
 
 public:
     
-    template<
-        typename T,
-        typename ...args>
-    inline static void construct(
-        T *at,
-        args... constructor_arguments);
+    template<typename T, typename ...args>
+    inline static void construct(T *at, args... constructor_arguments);
     
-    template<
-        typename T>
-    inline static void destruct(
-        T *at);
+    template<typename T>
+    inline static void destruct(T *at);
 
 public:
     
-    [[nodiscard]] virtual void *allocate(
-        size_t value_size,
-        size_t values_count) = 0;
+    [[nodiscard]] virtual void *allocate(size_t value_size, size_t values_count) = 0;
     
-    virtual void deallocate(
-        void *at) = 0;
+    virtual void deallocate(void *at) = 0;
     
 };
 
-template<
-    typename T,
-    typename ...args>
-inline void allocator::construct(
-    T *at,
-    args... constructor_arguments)
+template<typename T, typename ...args>
+inline void allocator::construct(T *at, args... constructor_arguments)
 {
     new(at) T(constructor_arguments...);
 }
 
-template<
-    typename T>
-inline void allocator::destruct(
-    T *at)
+template<typename T>
+inline void allocator::destruct(T *at)
 {
     at->~T();
 }

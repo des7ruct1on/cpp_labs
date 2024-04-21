@@ -12,7 +12,7 @@ target_include_directories(
 set_target_properties(
         mp_os_cmmn PROPERTIES
         LANGUAGES CXX
-        CXX_STANDARD 14
+        CXX_STANDARD 23
         CXX_STANDARD_REQUIRED ON
         CXX_EXTENSIONS OFF
         VERSION 1.0

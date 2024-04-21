@@ -16,11 +16,9 @@ public:
         
         bool is_block_occupied;
         
-        bool operator==(
-            block_info const &other) const noexcept;
+        bool operator==(block_info const &other) const noexcept;
         
-        bool operator!=(
-            block_info const &other) const noexcept;
+        bool operator!=(block_info const &other) const noexcept;
         
     };
 

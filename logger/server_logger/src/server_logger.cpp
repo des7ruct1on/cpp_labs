@@ -3,7 +3,7 @@
 #ifdef _WIN32
 std::map<std::string, std::pair<HANDLE, size_t>> server_logger::queues_users = std::map<std::string, std::pair<HANDLE, size_t>>();
 #else
-std::map<std::string, std::pair<mqd_t, size_t>> server_logger::queues_users = std::map<std::string, std::pair<mqd_t, size_t>>();
+std::map<std::string, std::pair<msqid_ds, size_t>> server_logger::queues_users = std::map<std::string, std::pair<msqid_ds, size_t>>();
 #endif
 
 server_logger::server_logger(server_logger const &other) = default;
@@ -20,8 +20,8 @@ server_logger::server_logger(std::map<std::string, std::set<logger::severity>> c
             }
 
 #else
-            mqd_t q = mq_open(key.c_str(), O_WRONLY, 0644);
-            if (q == (mqd_t) - 1) {
+            msqid_ds q = mq_open(key.c_str(), O_WRONLY, 0644);
+            if (q == (msqid_ds) - 1) {
                 throw std::runtime_error("Can`t open queue");
             }
 

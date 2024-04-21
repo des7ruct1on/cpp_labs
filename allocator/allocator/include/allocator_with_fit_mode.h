@@ -3,8 +3,7 @@
 
 #include "allocator.h"
 
-class allocator_with_fit_mode:
-    public allocator
+class allocator_with_fit_mode: public allocator
 {
 
 public:
@@ -18,8 +17,7 @@ public:
 
 public:
     
-    inline virtual void set_fit_mode(
-        fit_mode mode) = 0;
+    inline virtual void set_fit_mode(fit_mode mode) = 0;
     
 };
 

@@ -1,0 +1,10 @@
+[DEBUG] [allocator_boundary_tags] [START] constructor
+
+[DEBUG] [allocator_boundary_tags] [END] constructor
+
+[DEBUG] [allocator_boundary_tags] [START] allocation
+
+[DEBUG] [allocator_boundary_tags] [START] destructor
+
+[DEBUG] [allocator_boundary_tags] [END] destructor
+

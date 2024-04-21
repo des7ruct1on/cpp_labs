@@ -5,7 +5,7 @@
 
 class logger_builder
 {
-protected:
+public:
 
     static logger::severity string_to_severity(std::string const &severity_string);
 
@@ -21,7 +21,7 @@ public:
 
     virtual logger_builder *clear() = 0;
 
-    virtual logger *build() const = 0;
+    [[nodiscard]] virtual logger *build() const = 0;
 };
 
 #endif

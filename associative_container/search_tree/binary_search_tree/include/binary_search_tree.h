@@ -11,20 +11,12 @@
 #include <not_implemented.h>
 #include <search_tree.h>
 
-template<
-    typename tkey,
-    typename tvalue>
-class binary_search_tree:
-    public search_tree<tkey, tvalue>
-{
+template<typename tkey, typename tvalue>
+class binary_search_tree: public search_tree<tkey, tvalue> {
 
 protected:
     
-    struct node
-    {
-    
-    public:
-        
+    struct node {
         tkey key;
         
         tvalue value;
@@ -32,338 +24,218 @@ protected:
         node *left_subtree;
         
         node *right_subtree;
-    
-    public:
+
+        explicit node(tkey const &key, tvalue const &value);
         
-        explicit node(
-            tkey const &key,
-            tvalue const &value);
-        
-        explicit node(
-            tkey const &key,
-            tvalue &&value);
-        
+        explicit node(tkey const &key, tvalue &&value);
     };
 
 public:
     
     // region iterators definition
     
-    struct iterator_data
-    {
-    
-    public:
-        
+    struct iterator_data {
+
         unsigned int depth;
         
         tkey key;
         
         tvalue value;
-    
-    public:
-    
-        explicit iterator_data(
-            unsigned int depth,
-            tkey const &key,
-            tvalue const &value);
-        
+
+        explicit iterator_data(unsigned int depth, tkey const &key, tvalue const &value);
     };
     
-    class prefix_iterator final
-    {
-    
-    public:
+    class prefix_iterator final {
         
-        explicit prefix_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
-    
-    public:
+        explicit prefix_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+
+        bool operator==(prefix_iterator const &other) const noexcept;
         
-        bool operator==(
-            prefix_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            prefix_iterator const &other) const noexcept;
+        bool operator!=(prefix_iterator const &other) const noexcept;
         
         prefix_iterator &operator++();
         
-        prefix_iterator const operator++(
-            int not_used);
+        prefix_iterator const operator++(int not_used);
         
         iterator_data *operator*() const;
         
     };
     
-    class prefix_const_iterator final
-    {
+    class prefix_const_iterator final {
+
+        explicit prefix_const_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(prefix_const_iterator const &other) const noexcept;
         
-        explicit prefix_const_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
-    
-    public:
-        
-        bool operator==(
-            prefix_const_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            prefix_const_iterator const &other) const noexcept;
+        bool operator!=(prefix_const_iterator const &other) const noexcept;
         
         prefix_const_iterator &operator++();
         
-        prefix_const_iterator const operator++(
-            int not_used);
+        prefix_const_iterator const operator++(int not_used);
         
         iterator_data const *operator*() const;
         
     };
     
-    class prefix_reverse_iterator final
-    {
-    
-    public:
+    class prefix_reverse_iterator final {
+
+        explicit prefix_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+
+        bool operator==(prefix_reverse_iterator const &other) const noexcept;
         
-        explicit prefix_reverse_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
-    
-    public:
-        
-        bool operator==(
-            prefix_reverse_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            prefix_reverse_iterator const &other) const noexcept;
+        bool operator!=(prefix_reverse_iterator const &other) const noexcept;
         
         prefix_reverse_iterator &operator++();
         
-        prefix_reverse_iterator const operator++(
-            int not_used);
+        prefix_reverse_iterator const operator++(int not_used);
         
         iterator_data *operator*() const;
         
     };
     
-    class prefix_const_reverse_iterator final
-    {
+    class prefix_const_reverse_iterator final {
     
-    public:
-        
-        explicit prefix_const_reverse_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+        explicit prefix_const_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(prefix_const_reverse_iterator const &other) const noexcept;
         
-        bool operator==(
-            prefix_const_reverse_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            prefix_const_reverse_iterator const &other) const noexcept;
+        bool operator!=(prefix_const_reverse_iterator const &other) const noexcept;
         
         prefix_const_reverse_iterator &operator++();
         
-        prefix_const_reverse_iterator const operator++(
-            int not_used);
+        prefix_const_reverse_iterator const operator++(int not_used);
         
         iterator_data const *operator*() const;
         
     };
     
-    class infix_iterator final
-    {
+    class infix_iterator final {
+
+        explicit infix_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(infix_iterator const &other) const noexcept;
         
-        explicit infix_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
-    
-    public:
-        
-        bool operator==(
-            infix_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            infix_iterator const &other) const noexcept;
+        bool operator!=(infix_iterator const &other) const noexcept;
         
         infix_iterator &operator++();
         
-        infix_iterator const operator++(
-            int not_used);
+        infix_iterator const operator++(int not_used);
         
         iterator_data *operator*() const;
         
     };
     
-    class infix_const_iterator final
-    {
+    class infix_const_iterator final {
     
     public:
         
-        explicit infix_const_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+        explicit infix_const_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
     public:
         
-        bool operator==(
-            infix_const_iterator const &other) const noexcept;
+        bool operator==(infix_const_iterator const &other) const noexcept;
         
-        bool operator!=(
-            infix_const_iterator const &other) const noexcept;
+        bool operator!=(infix_const_iterator const &other) const noexcept;
         
         infix_const_iterator &operator++();
         
-        infix_const_iterator const operator++(
-            int not_used);
+        infix_const_iterator const operator++(int not_used);
         
         iterator_data const *operator*() const;
         
     };
     
-    class infix_reverse_iterator final
-    {
+    class infix_reverse_iterator final {
     
-    public:
-        
-        explicit infix_reverse_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+        explicit infix_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(infix_reverse_iterator const &other) const noexcept;
         
-        bool operator==(
-            infix_reverse_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            infix_reverse_iterator const &other) const noexcept;
+        bool operator!=(infix_reverse_iterator const &other) const noexcept;
         
         infix_reverse_iterator &operator++();
         
-        infix_reverse_iterator const operator++(
-            int not_used);
+        infix_reverse_iterator const operator++(int not_used);
         
         iterator_data *operator*() const;
         
     };
     
-    class infix_const_reverse_iterator final
-    {
+    class infix_const_reverse_iterator final {
     
-    public:
-        
-        explicit infix_const_reverse_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+        explicit infix_const_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(infix_const_reverse_iterator const &other) const noexcept;
         
-        bool operator==(
-            infix_const_reverse_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            infix_const_reverse_iterator const &other) const noexcept;
+        bool operator!=(infix_const_reverse_iterator const &other) const noexcept;
         
         infix_const_reverse_iterator &operator++();
         
-        infix_const_reverse_iterator const operator++(
-            int not_used);
+        infix_const_reverse_iterator const operator++(int not_used);
         
         iterator_data const *operator*() const;
         
     };
     
-    class postfix_iterator final
-    {
+    class postfix_iterator final {
     
-    public:
+        explicit postfix_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
         
-        explicit postfix_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
-    
-    public:
+        bool operator==(postfix_iterator const &other) const noexcept;
         
-        bool operator==(
-            postfix_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            postfix_iterator const &other) const noexcept;
+        bool operator!=(postfix_iterator const &other) const noexcept;
         
         postfix_iterator &operator++();
         
-        postfix_iterator const operator++(
-            int not_used);
+        postfix_iterator const operator++(int not_used);
         
         iterator_data *operator*() const;
         
     };
     
-    class postfix_const_iterator final
-    {
+    class postfix_const_iterator final {
+
+        explicit postfix_const_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(postfix_const_iterator const &other) const noexcept;
         
-        explicit postfix_const_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
-    
-    public:
-        
-        bool operator==(
-            postfix_const_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            postfix_const_iterator const &other) const noexcept;
+        bool operator!=(postfix_const_iterator const &other) const noexcept;
         
         postfix_const_iterator &operator++();
         
-        postfix_const_iterator const operator++(
-            int not_used);
+        postfix_const_iterator const operator++(int not_used);
         
         iterator_data const *operator*() const;
         
     };
     
-    class postfix_reverse_iterator final
-    {
+    class postfix_reverse_iterator final {
     
-    public:
-        
-        explicit postfix_reverse_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+        explicit postfix_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(postfix_reverse_iterator const &other) const noexcept;
         
-        bool operator==(
-            postfix_reverse_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            postfix_reverse_iterator const &other) const noexcept;
+        bool operator!=(postfix_reverse_iterator const &other) const noexcept;
         
         postfix_reverse_iterator &operator++();
         
-        postfix_reverse_iterator const operator++(
-            int not_used);
+        postfix_reverse_iterator const operator++(int not_used);
         
         iterator_data *operator*() const;
         
     };
     
-    class postfix_const_reverse_iterator final
-    {
+    class postfix_const_reverse_iterator final {
     
-    public:
-        
-        explicit postfix_const_reverse_iterator(
-            typename binary_search_tree<tkey, tvalue>::node *subtree_root);
+        explicit postfix_const_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root);
     
-    public:
+        bool operator==(postfix_const_reverse_iterator const &other) const noexcept;
         
-        bool operator==(
-            postfix_const_reverse_iterator const &other) const noexcept;
-        
-        bool operator!=(
-            postfix_const_reverse_iterator const &other) const noexcept;
+        bool operator!=(postfix_const_reverse_iterator const &other) const noexcept;
         
         postfix_const_reverse_iterator &operator++();
         
-        postfix_const_reverse_iterator const operator++(
-            int not_used);
+        postfix_const_reverse_iterator const operator++(int not_used);
         
         iterator_data const *operator*() const;
         
@@ -391,58 +263,37 @@ protected:
     
     // region target operations associated exception types
     
-    class insertion_of_existent_key_attempt_exception final:
-        public std::logic_error
-    {
+    class insertion_of_existent_key_attempt_exception final: public std::logic_error {
     
-    private:
-        
         tkey _key;
     
     public:
         
-        explicit insertion_of_existent_key_attempt_exception(
-            tkey const &key);
-        
-    public:
+        explicit insertion_of_existent_key_attempt_exception(tkey const &key);
         
         tkey const &get_key() const noexcept;
     
     };
     
-    class obtaining_of_nonexistent_key_attempt_exception final:
-        public std::logic_error
-    {
+    class obtaining_of_nonexistent_key_attempt_exception final: public std::logic_error {
     
-    private:
-        
         tkey _key;
         
     public:
         
-        explicit obtaining_of_nonexistent_key_attempt_exception(
-            tkey const &key);
-        
-    public:
+        explicit obtaining_of_nonexistent_key_attempt_exception(tkey const &key);
         
         tkey const &get_key() const noexcept;
         
     };
     
-    class disposal_of_nonexistent_key_attempt_exception final:
-        public std::logic_error
-    {
+    class disposal_of_nonexistent_key_attempt_exception final: public std::logic_error {
     
-    private:
-        
         tkey _key;
     
     public:
         
-        explicit disposal_of_nonexistent_key_attempt_exception(
-            tkey const &key);
-        
-    public:
+        explicit disposal_of_nonexistent_key_attempt_exception(tkey const &key);
         
         tkey const &get_key() const noexcept;
     
@@ -452,18 +303,13 @@ protected:
     
     // region template methods definition
     
-    class template_method_basics:
-        public logger_guardant
-    {
-    
-    private:
-    
+    class template_method_basics: public logger_guardant {
+
         binary_search_tree<tkey, tvalue> *_tree;
         
     public:
     
-        explicit template_method_basics(
-            binary_search_tree<tkey, tvalue> *tree);
+        explicit template_method_basics(binary_search_tree<tkey, tvalue> *tree);
         
     protected:
         
@@ -475,33 +321,19 @@ protected:
         
     };
     
-    class insertion_template_method:
-        public template_method_basics,
-        public allocator_guardant
-    {
-    
-    private:
+    class insertion_template_method: public template_method_basics, public allocator_guardant {
         
         binary_search_tree<tkey, tvalue> *_tree;
     
     public:
         
-        explicit insertion_template_method(
-            binary_search_tree<tkey, tvalue> *tree,
-            typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy);
+        explicit insertion_template_method(binary_search_tree<tkey, tvalue> *tree, typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy);
         
-    public:
+        void insert(tkey const &key, tvalue const &value);
         
-        void insert(
-            tkey const &key,
-            tvalue const &value);
-        
-        void insert(
-            tkey const &key,
-            tvalue &&value);
+        void insert(tkey const &key, tvalue &&value);
     
-        void set_insertion_strategy(
-            typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy) noexcept;
+        void set_insertion_strategy(typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy) noexcept;
     
     protected:
         
@@ -513,23 +345,15 @@ protected:
         
     };
     
-    class obtaining_template_method:
-        public template_method_basics
-    {
+    class obtaining_template_method: public template_method_basics {
     
-    private:
-        
         binary_search_tree<tkey, tvalue> *_tree;
     
     public:
         
-        explicit obtaining_template_method(
-            binary_search_tree<tkey, tvalue> *tree);
-    
-    public:
+        explicit obtaining_template_method(binary_search_tree<tkey, tvalue> *tree);
         
-        tvalue const &obtain(
-            tkey const &key);
+        tvalue const &obtain(tkey const &key);
     
     protected:
         
@@ -537,28 +361,17 @@ protected:
         
     };
     
-    class disposal_template_method:
-        public template_method_basics,
-        public allocator_guardant
-    {
-    
-    private:
+    class disposal_template_method: public template_method_basics, public allocator_guardant {
         
         binary_search_tree<tkey, tvalue> *_tree;
     
     public:
         
-        explicit disposal_template_method(
-            binary_search_tree<tkey, tvalue> *tree,
-            typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy);
+        explicit disposal_template_method(binary_search_tree<tkey, tvalue> *tree, typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy);
         
-    public:
+        tvalue dispose(tkey const &key);
         
-        tvalue dispose(
-            tkey const &key);
-        
-        void set_disposal_strategy(
-            typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy) noexcept;
+        void set_disposal_strategy(typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy) noexcept;
     
     protected:
         
@@ -603,32 +416,23 @@ public:
 
 public:
     
-    binary_search_tree(
-        binary_search_tree<tkey, tvalue> const &other);
+    binary_search_tree(binary_search_tree<tkey, tvalue> const &other);
     
-    binary_search_tree(
-        binary_search_tree<tkey, tvalue> &&other) noexcept;
+    binary_search_tree(binary_search_tree<tkey, tvalue> &&other) noexcept;
     
-    binary_search_tree<tkey, tvalue> &operator=(
-        binary_search_tree<tkey, tvalue> const &other);
+    binary_search_tree<tkey, tvalue> &operator=(binary_search_tree<tkey, tvalue> const &other);
     
-    binary_search_tree<tkey, tvalue> &operator=(
-        binary_search_tree<tkey, tvalue> &&other) noexcept;
+    binary_search_tree<tkey, tvalue> &operator=(binary_search_tree<tkey, tvalue> &&other) noexcept;
     
     ~binary_search_tree() override;
 
 public:
     
-    void insert(
-        tkey const &key,
-        tvalue const &value) final;
+    void insert(tkey const &key, tvalue const &value) final;
     
-    void insert(
-        tkey const &key,
-        tvalue &&value) final;
+    void insert(tkey const &key, tvalue &&value) final;
     
-    tvalue const &obtain(
-        tkey const &key) final;
+    tvalue const &obtain(tkey const &key) final;
     
     std::vector<typename associative_container<tkey, tvalue>::key_value_pair> obtain_between(
         tkey const &lower_bound,
@@ -636,16 +440,13 @@ public:
         bool lower_bound_inclusive,
         bool upper_bound_inclusive) final;
     
-    tvalue dispose(
-        tkey const &key) final;
+    tvalue dispose(tkey const &key) final;
     
 public:
     
-    void set_insertion_strategy(
-        typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy) noexcept;
+    void set_insertion_strategy(typename binary_search_tree<tkey, tvalue>::insertion_of_existent_key_attempt_strategy insertion_strategy) noexcept;
     
-    void set_removal_strategy(
-        typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy) noexcept;
+    void set_removal_strategy(typename binary_search_tree<tkey, tvalue>::disposal_of_nonexistent_key_attempt_strategy disposal_strategy) noexcept;
 
 public:
     
@@ -705,31 +506,17 @@ protected:
     
     // region subtree rotations definition
     
-    void small_left_rotation(
-        typename binary_search_tree<tkey, tvalue>::node *&subtree_root,
-        bool validate = true) const;
+    void small_left_rotation(typename binary_search_tree<tkey, tvalue>::node *&subtree_root, bool validate = true) const;
     
-    void small_right_rotation(
-        typename binary_search_tree<tkey, tvalue>::node *&subtree_root,
-        bool validate = true) const;
+    void small_right_rotation(typename binary_search_tree<tkey, tvalue>::node *&subtree_root, bool validate = true) const;
     
-    void big_left_rotation(
-        typename binary_search_tree<tkey, tvalue>::node *&subtree_root,
-        bool validate = true) const;
+    void big_left_rotation(typename binary_search_tree<tkey, tvalue>::node *&subtree_root, bool validate = true) const;
     
-    void big_right_rotation(
-        typename binary_search_tree<tkey, tvalue>::node *&subtree_root,
-        bool validate = true) const;
+    void big_right_rotation(typename binary_search_tree<tkey, tvalue>::node *&subtree_root, bool validate = true) const;
     
-    void double_left_rotation(
-        typename binary_search_tree<tkey, tvalue>::node *&subtree_root,
-        bool at_grandparent_first,
-        bool validate = true) const;
+    void double_left_rotation(typename binary_search_tree<tkey, tvalue>::node *&subtree_root, bool at_grandparent_first, bool validate = true) const;
     
-    void double_right_rotation(
-        typename binary_search_tree<tkey, tvalue>::node *&subtree_root,
-        bool at_grandparent_first,
-        bool validate = true) const;
+    void double_right_rotation(typename binary_search_tree<tkey, tvalue>::node *&subtree_root, bool at_grandparent_first, bool validate = true) const;
     
     // endregion subtree rotations definition
     
@@ -737,23 +524,13 @@ protected:
 
 // region binary_search_tree<tkey, tvalue>::node methods implementation
 
-template<
-    typename tkey,
-    typename tvalue>
-binary_search_tree<tkey, tvalue>::node::node(
-    tkey const &key,
-    tvalue const &value)
-{
+template<typename tkey, typename tvalue>
+binary_search_tree<tkey, tvalue>::node::node(tkey const &key, tvalue const &value) {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::node::node(tkey const &, tvalue const &)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-binary_search_tree<tkey, tvalue>::node::node(
-    tkey const &key,
-    tvalue &&value)
-{
+template<typename tkey, typename tvalue>
+binary_search_tree<tkey, tvalue>::node::node(tkey const &key, tvalue &&value) {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::node::node(tkey const &, tvalue &&)", "your code should be here...");
 }
 
@@ -763,16 +540,14 @@ binary_search_tree<tkey, tvalue>::node::node(
 
 // region iterator data implementation
 
-template<
-    typename tkey,
-    typename tvalue>
+template<typename tkey, typename tvalue>
 binary_search_tree<tkey, tvalue>::iterator_data::iterator_data(
     unsigned int depth,
     tkey const &key,
     tvalue const &value):
     depth(depth),
     key(key),
-    value(value)
+    value(value) 
 {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::iterator_data::iterator_data(unsigned int, tkey const &, tvalue const &)", "your code should be here...");
 }
@@ -781,55 +556,37 @@ binary_search_tree<tkey, tvalue>::iterator_data::iterator_data(
 
 // region prefix_iterator implementation
 
-template<
-    typename tkey,
-    typename tvalue>
-binary_search_tree<tkey, tvalue>::prefix_iterator::prefix_iterator(
-    typename binary_search_tree<tkey, tvalue>::node *subtree_root)
+template<typename tkey, typename tvalue>
+binary_search_tree<tkey, tvalue>::prefix_iterator::prefix_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root) 
 {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::prefix_iterator::prefix_iterator(typename binary_search_tree<tkey, tvalue>::node *)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_iterator::operator==(
-    typename binary_search_tree<tkey, tvalue>::prefix_iterator const &other) const noexcept
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_iterator const &other) const noexcept 
 {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_iterator::operator!=(
-    typename binary_search_tree<tkey, tvalue>::prefix_iterator const &other) const noexcept
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_iterator const &other) const noexcept 
 {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::prefix_iterator &binary_search_tree<tkey, tvalue>::prefix_iterator::operator++()
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::prefix_iterator &binary_search_tree<tkey, tvalue>::prefix_iterator::operator++() 
 {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::prefix_iterator &binary_search_tree<tkey, tvalue>::prefix_iterator::operator++()", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::prefix_iterator const binary_search_tree<tkey, tvalue>::prefix_iterator::operator++(
-    int not_used)
-{
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::prefix_iterator const binary_search_tree<tkey, tvalue>::prefix_iterator::operator++(int not_used) {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::prefix_iterator const binary_search_tree<tkey, tvalue>::prefix_iterator::operator++(int)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tkey, tvalue>::prefix_iterator::operator*() const
-{
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tkey, tvalue>::prefix_iterator::operator*() const {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tkey, tvalue>::prefix_iterator::operator*() const", "your code should be here...");
 }
 
@@ -837,55 +594,33 @@ typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tke
 
 // region prefix_const_iterator implementation
 
-template<
-    typename tkey,
-    typename tvalue>
-binary_search_tree<tkey, tvalue>::prefix_const_iterator::prefix_const_iterator(
-    typename binary_search_tree<tkey, tvalue>::node *subtree_root)
-{
+template<typename tkey, typename tvalue>
+binary_search_tree<tkey, tvalue>::prefix_const_iterator::prefix_const_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root) {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::prefix_const_iterator::prefix_const_iterator(typename binary_search_tree<tkey, tvalue>::node *)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator==(
-    typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const &other) const noexcept
-{
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const &other) const noexcept {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator!=(
-    typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const &other) const noexcept
-{
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const &other) const noexcept {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::prefix_const_iterator &binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator++()
-{
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::prefix_const_iterator &binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator++() {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::prefix_const_iterator &binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator++()", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator++(
-    int not_used)
-{
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator++(int not_used) {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::prefix_const_iterator const binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator++(int)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::iterator_data const *binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator*() const
-{
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::iterator_data const *binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator*() const {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::iterator_data const *binary_search_tree<tkey, tvalue>::prefix_const_iterator::operator*() const", "your code should be here...");
 }
 
@@ -893,53 +628,35 @@ typename binary_search_tree<tkey, tvalue>::iterator_data const *binary_search_tr
 
 // region prefix_reverse_iterator implementation
 
-template<
-    typename tkey,
-    typename tvalue>
-binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::prefix_reverse_iterator(
-    typename binary_search_tree<tkey, tvalue>::node *subtree_root)
-{
+template<typename tkey, typename tvalue>
+binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::prefix_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root) {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::prefix_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator==(
-    typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const &other) const noexcept
-{
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const &other) const noexcept {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator!=(
-    typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const &other) const noexcept
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const &other) const noexcept
 {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
+template<typename tkey, typename tvalue>
 typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator &binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator++()
 {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator &binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator++()", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator++(
-    int not_used)
+template<typename tkey, typename tvalue>
+typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator++(int not_used)
 {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::prefix_reverse_iterator const binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator++(int)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
+template<typename tkey, typename tvalue>
 typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator*() const
 {
     throw not_implemented("template<typename tkey, typename tvalue> typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tkey, tvalue>::prefix_reverse_iterator::operator*() const", "your code should be here...");
@@ -949,29 +666,20 @@ typename binary_search_tree<tkey, tvalue>::iterator_data *binary_search_tree<tke
 
 // region prefix_const_reverse_iterator implementation
 
-template<
-    typename tkey,
-    typename tvalue>
-binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::prefix_const_reverse_iterator(
-    typename binary_search_tree<tkey, tvalue>::node *subtree_root)
+template<typename tkey, typename tvalue>
+binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::prefix_const_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *subtree_root)
 {
     throw not_implemented("template<typename tkey, typename tvalue> binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::prefix_const_reverse_iterator(typename binary_search_tree<tkey, tvalue>::node *)", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::operator==(
-    typename binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator const &other) const noexcept
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator const &other) const noexcept
 {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::operator==(typename binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator const &) const noexcept", "your code should be here...");
 }
 
-template<
-    typename tkey,
-    typename tvalue>
-bool binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::operator!=(
-    typename binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator const &other) const noexcept
+template<typename tkey, typename tvalue>
+bool binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator const &other) const noexcept
 {
     throw not_implemented("template<typename tkey, typename tvalue> bool binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator::operator!=(typename binary_search_tree<tkey, tvalue>::prefix_const_reverse_iterator const &) const noexcept", "your code should be here...");
 }

@@ -19,6 +19,6 @@ set_target_properties(
         DESCRIPTION "associative container interface library"
         LANGUAGES CXX
         LINKER_LANGUAGE CXX
-        CXX_STANDARD 14
+        CXX_STANDARD 23
         CXX_STANDARD_REQUIRED ON
         CXX_EXTENSIONS OFF)

@@ -3,9 +3,12 @@
 
 #include <logger_builder.h>
 #include <cstring>
-#include "../../../common/mini/ini.h"
+//#include "../../../common/mini/ini.h"
 #include "../../logger/include/logger_builder.h"
 #include "server_logger.h"
+#include <map>
+#include <set>
+#include <string>
 
 #ifdef _WIN32
     #define STREAM "CONSOLE"
@@ -14,7 +17,7 @@
 #else
     #define STREAM "/dev/tty"
     #include <unistd.h>
-    #include <mqueue.h>
+    #include <sys/msg.h>
     #include <sys/fcntl.h>
     #include <sys/stat.h>
     #include <sys/types.h>

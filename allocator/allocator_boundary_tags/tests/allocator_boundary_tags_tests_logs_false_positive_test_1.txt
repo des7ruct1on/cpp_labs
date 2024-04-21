@@ -1,0 +1,12 @@
+[INFORMATION] [allocator_boundary_tags]   -> Available memory: 1968
+
+[INFORMATION] [allocator_boundary_tags]   -> Available memory: 1928
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 2960
+
+[INFORMATION] [allocator_boundary_tags]   -> Available memory: 1928
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 2960
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 3000
+
