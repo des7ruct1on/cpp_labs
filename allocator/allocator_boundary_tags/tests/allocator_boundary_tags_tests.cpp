@@ -58,7 +58,6 @@ TEST(positiveTests, test1)
     the_same_subject->set_fit_mode(allocator_with_fit_mode::fit_mode::the_best_fit);
     auto const *fifth_block = reinterpret_cast<int const *>(subject->allocate(sizeof(int), 1));
     
-    // тут память норм не учитывается
     ASSERT_EQ(first_block + 10 + meta/4, fourth_block);
     ASSERT_EQ(third_block + 10 + meta/4, fifth_block);
     
@@ -124,10 +123,7 @@ TEST(falsePositiveTests, test1)
     delete logger_instance;
 }
 
-int main(
-    int argc,
-    char *argv[])
-{
+int main(int argc, char *argv[]) {
     testing::InitGoogleTest(&argc, argv);
     
     return RUN_ALL_TESTS();
