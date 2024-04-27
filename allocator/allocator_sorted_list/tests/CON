@@ -1,791 +1,65 @@
-[DEBUG] [Allocator Sorted List] [START] Constructor
+[DEBUG] [allocator_sorted_list] [START] constructor
 
 
-[DEBUG] [Allocator Sorted List] [END] Constructor
+[DEBUG] [allocator_sorted_list] [END] constructor
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
-	<occup> <504>
-	<avail> <4480>
-
-
-[DEBUG] [Allocator Sorted List] [END] Allocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[DEBUG] Blocks information:
-	<occup> <504>
-	<occup> <2296>
-	<avail> <2168>
-
-
-[DEBUG] [Allocator Sorted List] [END] Allocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[DEBUG] Blocks information:
-	<occup> <504>
-	<occup> <2296>
-	<occup> <504>
-	<avail> <1648>
-
-
-[DEBUG] [Allocator Sorted List] [END] Allocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[DEBUG] Blocks information:
-	<occup> <504>
-	<occup> <2296>
-	<occup> <504>
-	<occup> <936>
-	<avail> <696>
-
-
-[DEBUG] [Allocator Sorted List] [END] Allocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[DEBUG] Blocks information:
-	<occup> <504>
-	<occup> <2296>
-	<occup> <504>
-	<occup> <936>
-	<occup> <512>
-	<avail> <168>
-
-
-[DEBUG] [Allocator Sorted List] [END] Allocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[ERROR] [Allocator Sorted List] Cannot allocate block
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-
-[DEBUG] Blocks information:
-	<avail> <504>
-	<occup> <2296>
-	<occup> <504>
-	<occup> <936>
-	<occup> <512>
-	<avail> <168>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-
-[DEBUG] Blocks information:
-	<avail> <504>
-	<occup> <2296>
-	<occup> <504>
-	<occup> <936>
-	<avail> <696>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-
-[DEBUG] Blocks information:
-	<avail> <2816>
-	<occup> <504>
-	<occup> <936>
-	<avail> <696>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-
-[DEBUG] Blocks information:
-	<avail> <2816>
-	<occup> <504>
-	<avail> <1648>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
-
-[DEBUG] Blocks information:
-	<avail> <5000>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Destructor
-
-
-[DEBUG] [Allocator Sorted List] [END] Destructor
-
-
-[DEBUG] [Allocator Sorted List] [START] Constructor
-
-
-[DEBUG] [Allocator Sorted List] [END] Constructor
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[DEBUG] Blocks information:
+[DEBUG] block status:
 	<occup> <1000>
 	<avail> <3984>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
+[DEBUG] block status:
 	<occup> <1000>
 	<occup> <500>
 	<avail> <3468>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
+[DEBUG] block status:
 	<occup> <1000>
 	<occup> <500>
 	<occup> <2000>
 	<avail> <1452>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Deallocate
+[DEBUG] [allocator_sorted_list] [START] deallocation
 
 
-[DEBUG] [Allocator Sorted List]
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 52 163 128 43 1 0 0 0 248 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+[DEBUG] [allocator_sorted_list]
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
 
-[DEBUG] Blocks information:
+[DEBUG] block status:
 	<avail> <1000>
 	<occup> <500>
 	<occup> <2000>
 	<avail> <1452>
 
 
-[DEBUG] [Allocator Sorted List] [END] Deallocate
+[DEBUG] [allocator_sorted_list] [END] deallocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
+[DEBUG] block status:
 	<occup> <980>
 	<avail> <4>
 	<occup> <500>
@@ -793,782 +67,694 @@
 	<avail> <1452>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Constructor
+[DEBUG] [allocator_sorted_list] [START] constructor
 
 
-[DEBUG] [Allocator Sorted List] [END] Constructor
+[DEBUG] [allocator_sorted_list] [END] constructor
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<avail> <4528>
+[DEBUG] block status:
+	<occup> <1696>
+	<avail> <3288>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<occup> <504>
-	<avail> <4008>
+[DEBUG] block status:
+	<occup> <1696>
+	<occup> <1216>
+	<avail> <2056>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<occup> <504>
-	<occup> <976>
-	<avail> <3016>
+[DEBUG] block status:
+	<occup> <1696>
+	<occup> <1216>
+	<occup> <1992>
+	<avail> <48>
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [END] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<occup> <504>
-	<occup> <976>
-	<occup> <1856>
-	<avail> <1144>
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<occup> <504>
-	<occup> <976>
-	<occup> <1856>
-	<occup> <512>
-	<avail> <616>
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<occup> <504>
-	<occup> <976>
-	<occup> <1856>
-	<occup> <512>
-	<occup> <576>
-	<avail> <24>
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[DEBUG] [Allocator Sorted List] [END] Allocate
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[ERROR] [allocator_sorted_list] block is empty due a lack of ability to allocate
 
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
+[DEBUG] [allocator_sorted_list] [START] deallocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Allocate
+[DEBUG] [allocator_sorted_list]
+48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166 111 99 97 116 111 114 95 0 0 0 0 0 0 0 0 166 115 116 93 10 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 
 
+[DEBUG] block status:
+	<occup> <1696>
+	<avail> <1216>
+	<occup> <1992>
+	<avail> <48>
 
-[ERROR] [Allocator Sorted List] Cannot allocate block
 
+[DEBUG] [allocator_sorted_list] [END] deallocation
 
-[DEBUG] [Allocator Sorted List] [START] Deallocate
 
+[DEBUG] [allocator_sorted_list] [START] deallocation
 
-[DEBUG] [Allocator Sorted List]
-48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 53 50 32 49 54 51 32 49 50 56 32 52 51 32 49 32 48 32 48 32 48 32 50 52 56 32 56 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<avail> <504>
-	<occup> <976>
-	<occup> <1856>
-	<occup> <512>
-	<occup> <576>
-	<avail> <24>
+[DEBUG] [allocator_sorted_list]
+32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 91 68 69 66 85 71 93 32 91 97 108 108 111 99 97 116 111 114 95 115 111 114 116 101 100 95 108 105 115 116 93 10 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
 
+[DEBUG] block status:
+	<occup> <1696>
+	<avail> <3288>
 
-[DEBUG] [Allocator Sorted List] [END] Deallocate
 
+[DEBUG] [allocator_sorted_list] [END] deallocation
 
-[DEBUG] [Allocator Sorted List] [START] Deallocate
 
+[DEBUG] [allocator_sorted_list] [START] deallocation
 
-[DEBUG] [Allocator Sorted List]
-48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 0 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 0 0 0 0 0 0 0 0 110 32 48 32 48 32 48 32 0 0 0 0 0 0 0 0 110 32 48 32 48 32 48 32 48 32 48 32 
 
-[DEBUG] Blocks information:
-	<occup> <456>
-	<avail> <1496>
-	<occup> <1856>
-	<occup> <512>
-	<occup> <576>
-	<avail> <24>
+[DEBUG] [allocator_sorted_list]
+48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
 
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 0 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
-
-[DEBUG] Blocks information:
-	<occup> <456>
-	<avail> <3368>
-	<occup> <512>
-	<occup> <576>
-	<avail> <24>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 53 50 32 49 54 51 32 49 50 56 32 52 51 32 49 32 48 32 48 32 48 32 50 52 56 32 56 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
-
-[DEBUG] Blocks information:
-	<occup> <456>
-	<avail> <3368>
-	<occup> <512>
-	<avail> <616>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
-
-[DEBUG] Blocks information:
-	<avail> <3840>
-	<occup> <512>
-	<avail> <616>
-
-
-[DEBUG] [Allocator Sorted List] [END] Deallocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Deallocate
-
-
-[DEBUG] [Allocator Sorted List]
-48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 48 32 
-
-[DEBUG] Blocks information:
+[DEBUG] block status:
 	<avail> <5000>
 
 
-[DEBUG] [Allocator Sorted List] [END] Deallocate
+[DEBUG] [allocator_sorted_list] [END] deallocation
 
 
-[DEBUG] [Allocator Sorted List] [START] Destructor
+[DEBUG] [allocator_sorted_list] [START] destructor
+
+[DEBUG] [allocator_sorted_list] [END] destructor
+
+[DEBUG] [allocator_sorted_list] [START] destructor
+
+[DEBUG] [allocator_sorted_list] [END] destructor
+
+[DEBUG] [allocator_sorted_list] [START] constructor
 
 
-[DEBUG] [Allocator Sorted List] [END] Destructor
+[DEBUG] [allocator_sorted_list] [END] constructor
 
 
-[DEBUG] [Allocator Sorted List] [START] Destructor
+[DEBUG] [allocator_sorted_list] [START] allocation
 
 
-[DEBUG] [Allocator Sorted List] [END] Destructor
+[DEBUG] [allocator_sorted_list] [START] destructor
 
-
-[DEBUG] [Allocator Sorted List] [START] Constructor
-
-
-[DEBUG] [Allocator Sorted List] [END] Constructor
-
-
-[DEBUG] [Allocator Sorted List] [START] Allocate
-
-
-[DEBUG] [Allocator Sorted List] [START] Destructor
-
-
-[DEBUG] [Allocator Sorted List] [END] Destructor
-
+[DEBUG] [allocator_sorted_list] [END] destructor
 

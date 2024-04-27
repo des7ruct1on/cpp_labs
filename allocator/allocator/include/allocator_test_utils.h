@@ -9,8 +9,7 @@ class allocator_test_utils
 
 public:
     
-    struct block_info final
-    {
+    struct block_info final {
         
         size_t block_size;
         

@@ -21,6 +21,9 @@ private:
     
     void* _trusted_memory = nullptr;
 
+    size_t meta_size = sizeof(size_t) + sizeof(allocator *) + sizeof(allocator_with_fit_mode::fit_mode) + sizeof(void*) + sizeof(std::mutex) + sizeof(logger*);
+    size_t block_meta_size = 3 * sizeof(void*) + sizeof(size_t);
+
 public:
     
     ~allocator_boundary_tags() override;

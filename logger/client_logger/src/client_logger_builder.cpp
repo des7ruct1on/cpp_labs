@@ -38,29 +38,6 @@ logger_builder *client_logger_builder::add_console_stream(logger::severity sever
     return this;
 }
 
-/*
-формат файла:
-{
-    "files" :
-    [
-        [
-            "file1",
-            [
-                "WARNING",
-                "DEBUG"
-            ]
-        ],
-        
-        [
-            "file2",
-            [
-                "WARNING",
-                "ERROR"
-            ]
-        ]
-    ]   
-}
-*/
 logger_builder* client_logger_builder::transform_with_configuration(std::string const &configuration_file_path, std::string const &configuration_path)
 {
     std::runtime_error nonexistent_file("Configuration file doesn't exist\n");

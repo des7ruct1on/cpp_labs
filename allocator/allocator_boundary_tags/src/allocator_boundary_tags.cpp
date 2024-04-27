@@ -52,10 +52,6 @@ allocator_boundary_tags::allocator_boundary_tags(size_t space_size, allocator *p
         _logger->debug(get_typename() + " [START] " + "constructor");
     }
 
-    size_t meta_size = sizeof(size_t) + sizeof(allocator *) + sizeof(logger *) + sizeof(allocator_with_fit_mode::fit_mode) + sizeof(void*) + sizeof(std::mutex);
-    size_t block_meta_size = sizeof(allocator *) + 2 * sizeof(void*) + sizeof(size_t);
-
-    // if space can't allocate at least one occupied block with 0 space (meta only), allocator can't be created
     if (space_size < block_meta_size + sizeof(void*)) {
         std::string error = get_typename() + " [START] " + "can`t allocate, no space\n";
         if (_logger != nullptr) {
@@ -66,9 +62,9 @@ allocator_boundary_tags::allocator_boundary_tags(size_t space_size, allocator *p
 
     try {
         if (parent_allocator != nullptr) {
-            _trusted_memory = parent_allocator->allocate(space_size + meta_size, 1);
+            _trusted_memory = parent_allocator->allocate(meta_size + space_size + block_meta_size, 1);
         } else {
-            _trusted_memory = ::operator new(meta_size + space_size);
+            _trusted_memory = ::operator new(meta_size + space_size + block_meta_size);
         }
     } catch(const std::exception& e) {
         std::string error = get_typename() + " [START] " + "bad allocation detected\n";
@@ -115,7 +111,6 @@ allocator_boundary_tags::allocator_boundary_tags(size_t space_size, allocator *p
     }
 
     allocator_with_fit_mode::fit_mode fit_mode = get_fit_mode();
-    auto block_meta_size = sizeof(allocator*) + 2 * sizeof(void*) + sizeof(size_t);
 
     void * prev_filled_block = nullptr;
     void * cur_filled_block = get_first_filled_block();

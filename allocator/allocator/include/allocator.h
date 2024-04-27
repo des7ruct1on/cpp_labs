@@ -33,14 +33,12 @@ public:
 };
 
 template<typename T, typename ...args>
-inline void allocator::construct(T *at, args... constructor_arguments)
-{
+inline void allocator::construct(T *at, args... constructor_arguments) {
     new(at) T(constructor_arguments...);
 }
 
 template<typename T>
-inline void allocator::destruct(T *at)
-{
+inline void allocator::destruct(T *at) {
     at->~T();
 }
 

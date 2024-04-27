@@ -3,13 +3,11 @@
 
 #include "allocator.h"
 
-class allocator_with_fit_mode: public allocator
-{
+class allocator_with_fit_mode: public allocator {
 
 public:
     
-    enum class fit_mode
-    {
+    enum class fit_mode {
         first_fit,
         the_best_fit,
         the_worst_fit
