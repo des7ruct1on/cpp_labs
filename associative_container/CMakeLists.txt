@@ -4,6 +4,7 @@ project(mp_os_assctv_cntnr)
 add_subdirectory(search_tree)
 add_library(
         mp_os_assctv_cntnr
+        SHARED
         include/associative_container.h)
 target_include_directories(
         mp_os_assctv_cntnr

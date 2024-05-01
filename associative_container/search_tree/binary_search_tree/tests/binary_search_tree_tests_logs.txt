@@ -1,0 +1,124 @@
+[TRACE] binarySearchTreePositiveTests.test11 started
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started inserting
+
+
+[TRACE] [Binary Search Tree] finished inserting
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] [Binary Search Tree] started creating iter data
+
+
+[TRACE] [Binary Search Tree] iterator data has created
+
+
+[TRACE] binarySearchTreePositiveTests.test11 finished
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
+[TRACE] deleted node
+
+
