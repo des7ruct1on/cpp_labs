@@ -71,13 +71,13 @@
 			{
 				"command" : 1,
 				"file" : 2,
-				"line" : 20,
+				"line" : 21,
 				"parent" : 8
 			},
 			{
 				"command" : 1,
 				"file" : 2,
-				"line" : 16,
+				"line" : 17,
 				"parent" : 8
 			},
 			{
@@ -237,7 +237,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree -Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree -Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container",
+				"fragment" : "-Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree/AVL_tree -Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/binary_search_tree -Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree -Wl,-rpath,/Users/ivan/desktop/c++/cpp_labs/associative_container",
 				"role" : "libraries"
 			},
 			{
@@ -257,7 +257,7 @@
 			},
 			{
 				"backtrace" : 5,
-				"fragment" : "../libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.a",
+				"fragment" : "../libmp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr.1.0.dylib",
 				"role" : "libraries"
 			},
 			{

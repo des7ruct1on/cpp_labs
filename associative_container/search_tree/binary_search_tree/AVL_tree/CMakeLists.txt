@@ -4,6 +4,7 @@ project(mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr)
 add_subdirectory(tests)
 add_library(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr
+        SHARED
         include/AVL_tree.h)
 target_include_directories(
         mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_AVL_tr

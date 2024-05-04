@@ -26,9 +26,9 @@ protected:
 
         tvalue value;
 
-        node *left_subtree;
+        node* left_subtree;
 
-        node *right_subtree;
+        node* right_subtree;
     
         explicit node(tkey const &key, tvalue const &value);
         
@@ -45,14 +45,14 @@ public:
         return sizeof(binary_search_tree<tkey, tvalue>::node);
     }
 
-    virtual void call_node_constructor(typename binary_search_tree<tkey, tvalue>::node * raw_space, tkey const &key, tvalue const &value) const
+    virtual void call_node_constructor(typename binary_search_tree<tkey, tvalue>::node * tmp, tkey const &key, tvalue const &value) const
     {
-        allocator::construct(raw_space, key, value);
+        allocator::construct(tmp, key, value);
     }
 
-    virtual void call_node_constructor(typename binary_search_tree<tkey, tvalue>::node * raw_space, tkey const &key, tvalue &&value) const
+    virtual void call_node_constructor(typename binary_search_tree<tkey, tvalue>::node * tmp, tkey const &key, tvalue &&value) const
     {
-        allocator::construct(raw_space, key, std::move(value));
+        allocator::construct(tmp, key, std::move(value));
     }
 
 
@@ -1162,7 +1162,6 @@ protected:
         explicit obtaining_template_method(binary_search_tree<tkey, tvalue> *tree);
         
         tvalue const &obtain(tkey const &key);
-
         std::vector<typename associative_container<tkey, tvalue>::key_value_pair> obtain_between(
             tkey const &lower_bound,
             tkey const &upper_bound,
@@ -1184,27 +1183,35 @@ protected:
                     if (lower_bound_inc) {
                         break;
                     }
-
-                    cur = cur->right_subtree;
-                } else if (cmp < 0) {
+                    else {
+                        cur = cur->right_subtree;
+                    }
+                } 
+                else if (cmp < 0) {
                     cur = cur->left_subtree;
-                } else {
+                } 
+                else {
                     cur = cur->right_subtree;
                 }
 
-                if (cur == nullptr && this->_tree->_keys_comparer(path.top()->key, lower_bound) < (lower_bound_inc ? 0 : 1)) {
-                    path = std::move(std::stack<node*>());
+                if (cur == nullptr && this->_tree->_keys_comparer(path.top()->key, lower_bound) < 0) {
+                    if (!lower_bound_inc) {
+                        path = std::stack<node*>();
+                    }
                 }
             }
 
             auto it = infix_iterator(_tree, _tree->_root);
-            while ((it != this->_tree->end_infix()) && (this->_tree->_keys_comparer(upper_bound, (*it)->get_key()) > (upper_bound_inc ? -1 : 0))) {
-                range.push_back(std::move(typename associative_container<tkey, tvalue>::key_value_pair((*it)->get_key(), (*it)->get_value())));
+            while ((it != this->_tree->end_infix()) && (this->_tree->_keys_comparer(upper_bound, (*it)->get_key()) > -1)) {
+                if (upper_bound_inc || this->_tree->_keys_comparer(upper_bound, (*it)->get_key()) != 0) {
+                    range.push_back(std::move(typename associative_container<tkey, tvalue>::key_value_pair((*it)->get_key(), (*it)->get_value())));
+                }
                 ++it;
             }
 
             return range;
         }
+
 
     };
     
@@ -1283,8 +1290,8 @@ public:
     std::vector<typename associative_container<tkey, tvalue>::key_value_pair> obtain_between(
         tkey const &lower_bound,
         tkey const &upper_bound,
-        bool lower_bound_inclusive,
-        bool upper_bound_inclusive) final;
+        bool lower_bound_inc,
+        bool upper_bound_inc) final;
     
     tvalue dispose(tkey const &key) final;
     
@@ -2584,7 +2591,7 @@ std::vector<typename associative_container<tkey, tvalue>::key_value_pair> binary
     bool lower_bound_inc,
     bool upper_bound_inc)
 {
-    this->debug_with_guard("[Binary Search Tree] obtaining between\n");
+    this->debug_with_guard("[Binary Search Tree] obtaining from diap\n");
     return _obtaining_template->obtain_between(lower_bound, upper_bound, lower_bound_inc, upper_bound_inc);
 }
 

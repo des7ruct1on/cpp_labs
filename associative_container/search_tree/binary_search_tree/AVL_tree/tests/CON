@@ -1,0 +1,92 @@
+[DEBUG] [Binary Search Tree] constructor has started
+
+
+[DEBUG] [Binary Search Tree] constructor has finished
+
+
+[DEBUG] [AVL - tree] [Start] constructor started
+
+
+[DEBUG] [AVL - tree] [Finish] constructor finished
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Start] small Left Rotation
+
+[DEBUG] [Finish] small Left Rotation
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Start] small Right Rotation
+
+[DEBUG] [Finish] small Right Rotation
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Start] big Right Rotation
+
+[DEBUG] [Start] small Left Rotation
+
+[DEBUG] [Finish] small Left Rotation
+
+[DEBUG] [Start] small Right Rotation
+
+[DEBUG] [Finish] small Right Rotation
+
+[DEBUG] [Finish] big Right Rotation
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Start] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] [Finish] insertion with moving
+
+
+[DEBUG] [Binary Search Tree] obtaining from diap
+
+
+[DEBUG] [AVL - tree] Destructor
+
+
+[DEBUG] [Binary Search Tree] [Start] bst destructor has started
+
+
+[DEBUG] [Binary Search Tree] [Finish] bst destructor has started
+
+

@@ -7,7 +7,9 @@ client_logger_builder::client_logger_builder(client_logger_builder const &other)
 
 client_logger_builder &client_logger_builder::operator=(client_logger_builder const &other)
 {
-    if (this == &other) return *this;
+    if (this == &other) {
+        return *this;
+    }
     _streams = other._streams;
     _format = other._format;
     return *this;
@@ -18,7 +20,9 @@ client_logger_builder::client_logger_builder(client_logger_builder &&other) noex
 
 client_logger_builder &client_logger_builder::operator=(client_logger_builder &&other) noexcept
 {
-    if (this == &other) return *this;
+    if (this == &other) {
+        return *this;
+    }
     _format = std::move(other._format);
     _streams = std::move(other._streams);
     return *this;
@@ -45,21 +49,25 @@ logger_builder* client_logger_builder::transform_with_configuration(std::string 
 
     nlohmann::json configuration;
     std::ifstream configuration_file(configuration_file_path, std::ios::binary);
-    if (!(configuration_file.is_open())) throw nonexistent_file;
+    if (!(configuration_file.is_open())) {
+        throw nonexistent_file;
+    }
 
-    if (configuration_file.peek() == EOF) throw empty_file;
+    if (configuration_file.peek() == EOF) {
+        throw empty_file;
+    }
     configuration_file >> configuration;
-    if (configuration.find(configuration_path) == configuration.end()) throw empty_file;
+    if (configuration.find(configuration_path) == configuration.end()) {
+        throw empty_file;
+    }
 
     std::string file_name;
     std::string string_severity;
     logger::severity logger_severity;
 
-    for (auto & file : configuration[configuration_path])
-    {
+    for (auto & file : configuration[configuration_path]) {
         file_name = file[0];
-        for (auto & severity : file[1])
-        {
+        for (auto & severity : file[1]) {
             string_severity = severity;
             logger_severity = string_to_severity(string_severity);
             _streams[file_name].insert(logger_severity);
@@ -70,7 +78,9 @@ logger_builder* client_logger_builder::transform_with_configuration(std::string 
 
 logger_builder *client_logger_builder::clear()
 {
-    for (auto & file : _streams) file.second.clear();
+    for (auto & file : _streams) {
+        file.second.clear();
+    }
     _streams.clear();
     return this;
 }

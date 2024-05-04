@@ -4,8 +4,7 @@
 #include "../../logger/include/logger.h"
 #include "client_logger_builder.h"
 
-class client_logger final:
-    public logger
+class client_logger final: public logger
 {
     
     friend class client_logger_builder;

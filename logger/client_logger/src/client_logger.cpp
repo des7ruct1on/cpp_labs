@@ -5,13 +5,14 @@ std::map<std::string, std::pair<std::ofstream, int>> client_logger::_streams_use
 client_logger::client_logger(std::map<std::string, std::set<logger::severity>> streams, std::string format)
 {
     std::runtime_error file_opening("Failed to open stream\n");
-    for (auto &[file_name, severities] : streams)
-    {
-        if (_streams_users.find(file_name) != _streams_users.end() && _streams_users[file_name].second != 0) _streams[file_name] = severities;
-        else
-        {
+    for (auto &[file_name, severities] : streams) {
+        if (_streams_users.find(file_name) != _streams_users.end() && _streams_users[file_name].second != 0) {
+            _streams[file_name] = severities;
+        } else {
             _streams_users[file_name].first.open(file_name);
-            if (!(_streams_users[file_name].first.is_open())) throw file_opening;
+            if (!(_streams_users[file_name].first.is_open())) {
+                throw file_opening;
+            }
             _streams[file_name] = severities;
         }
         (_streams_users[file_name].second)++;
@@ -22,16 +23,22 @@ client_logger::client_logger(std::map<std::string, std::set<logger::severity>> s
 client_logger::client_logger(client_logger const &other) :
     _format(other._format), _streams(other._streams)
 {
-    for (auto &[key, pair] : _streams_users) pair.second++;
+    for (auto &[key, pair] : _streams_users) {
+        pair.second++;
+    }
 }
 
 client_logger &client_logger::operator=(client_logger const &other)
 {
-    if (this == &other) return *this;
+    if (this == &other) {
+        return *this;
+    }
     close_streams();
     _streams = other._streams;
     _format = other._format;
-    for (auto &[key, pair] : _streams) _streams_users[key].second++;
+    for (auto &[key, pair] : _streams) {
+        _streams_users[key].second++;
+    }
     return *this;
 }
 
@@ -40,7 +47,9 @@ client_logger::client_logger(client_logger &&other) noexcept :
 
 client_logger &client_logger::operator=(client_logger &&other) noexcept
 {
-    if (this == &other) return *this;
+    if (this == &other) {
+        return *this;
+    }
     close_streams();
     _format = std::move(other._format);
     _streams = std::move(other._streams);
@@ -49,10 +58,8 @@ client_logger &client_logger::operator=(client_logger &&other) noexcept
 
 void client_logger::close_streams()
 {
-    for (auto &[file_name, severities] : _streams)
-    {
-        if ((--_streams_users[file_name].second) == 0)
-        {
+    for (auto &[file_name, severities] : _streams) {
+        if ((--_streams_users[file_name].second) == 0) {
             _streams_users[file_name].first.close();
             _streams_users.erase(file_name);
         }
@@ -79,17 +86,17 @@ void format_to_message(std::string &replaced_format, const std::string &message,
     time_t time_now = time(NULL);
     char tmp_date_time[20];
 
-    std::string msg = "%m";
-    std::string sev = "%s";
-    std::string dt = "%d";
-    std::string tm = "%t";
+    std::string MSG = "%m";
+    std::string SEV = "%s";
+    std::string TIME = "%t";
+    std::string DATE = "%d";
 
-    replace_substring(replaced_format, msg, message);
-    replace_substring(replaced_format, sev, string_severity);
+    replace_substring(replaced_format, MSG, message);
+    replace_substring(replaced_format, SEV, string_severity);
     strftime(tmp_date_time, sizeof(tmp_date_time), "%T", localtime(&time_now));
-    replace_substring(replaced_format, tm, tmp_date_time);
+    replace_substring(replaced_format, TIME, tmp_date_time);
     strftime(tmp_date_time, sizeof(tmp_date_time), "%F", localtime(&time_now));
-    replace_substring(replaced_format, dt, tmp_date_time);
+    replace_substring(replaced_format, DATE, tmp_date_time);
 }
 
 logger const *client_logger::log(const std::string &text, logger::severity severity) const noexcept
@@ -98,9 +105,10 @@ logger const *client_logger::log(const std::string &text, logger::severity sever
     std::string message = _format;
     format_to_message(message, text, string_severity);
 
-    for (auto & [file_name, severities] : _streams)
-    {
-        if (severities.find(severity) != severities.end()) _streams_users[file_name].first << message << std::endl;
+    for (auto & [file_name, severities] : _streams) {
+        if (severities.find(severity) != severities.end()) {
+            _streams_users[file_name].first << message << std::endl;
+        }
     }
     return this;
 }

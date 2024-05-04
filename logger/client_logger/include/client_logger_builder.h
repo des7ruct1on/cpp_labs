@@ -17,8 +17,7 @@
 #else
 #endif
 
-class client_logger_builder final:
-    public logger_builder
+class client_logger_builder final: public logger_builder
 {
 
     std::map<std::string, std::set<logger::severity>> _streams;
