@@ -4,3 +4,17 @@
 
 [INFORMATION] [allocator_boundary_tags]   -> Available memory: 64
 
+[INFORMATION] [allocator_boundary_tags] Available memory: 136
+
+[INFORMATION] [allocator_boundary_tags]   -> Available memory: 96
+
+[INFORMATION] [allocator_boundary_tags]   -> Available memory: 32
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 104
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 176
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 216
+
+[INFORMATION] [allocator_boundary_tags] Available memory: 280
+

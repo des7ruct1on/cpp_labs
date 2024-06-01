@@ -34,7 +34,7 @@ protected:
         
         explicit node(tkey const &key, tvalue &&value);
 
-        virtual unsigned char get_height() {return 0;}
+        virtual unsigned char get_height() = 0;
 
         virtual void set_height(unsigned char height) {}
     };

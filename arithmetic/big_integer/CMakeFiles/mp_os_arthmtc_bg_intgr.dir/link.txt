@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libmp_os_arthmtc_bg_intgr.a CMakeFiles/mp_os_arthmtc_bg_intgr.dir/src/big_integer.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libmp_os_arthmtc_bg_intgr.a

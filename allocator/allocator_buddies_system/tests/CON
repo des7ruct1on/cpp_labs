@@ -1,6 +1,32 @@
-[DEBUG] [Allocator Buddies System] [START] Constructor
+[DEBUG] allocator_buddies_system [Constructor] [Finish]
 
+[DEBUG] allocator_buddies_system [Allocation] [Start]
 
-[DEBUG] [Allocator Buddies System] [END] Constructor
+[DEBUG] allocator_buddies_system [Allocation] [Finish]
 
+[DEBUG] allocator_buddies_system [Allocation] [Start]
+
+[DEBUG] allocator_buddies_system [Allocation] [Finish]
+
+[DEBUG] allocator_buddies_system [Deallocate] [Start]
+
+[DEBUG] Block status before deallocation: 0 0 0 0 0 0 0 3 -48 -64 62 2 0 96 0 0 
+
+[DEBUG] allocator_buddies_system [Deallocate] [Finish]
+
+[DEBUG] allocator_buddies_system [Deallocate] [Start]
+
+[DEBUG] Block status before deallocation: 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 
+
+[DEBUG] allocator_buddies_system [Deallocate] [Finish]
+
+[DEBUG] allocator_buddies_system [Destructor] [Start]
+
+[DEBUG] allocator_buddies_system [Deallocate] [Start]
+
+[DEBUG] Block status before deallocation: -48 -64 62 2 0 96 0 0 64 -64 62 2 0 96 0 0 0 0 0 0 90 84 85 77 0 0 0 0 0 0 0 0 -96 40 0 0 0 0 0 0 90 84 85 77 -1 -1 -1 -1 -80 -96 0 0 0 0 0 0 2 0 0 0 0 0 0 0 -1 -1 -1 -1 75 -75 15 -55 -2 -1 -1 -1 90 84 85 77 90 84 85 77 8 10 -48 -64 62 2 0 96 0 0 0 0 0 0 0 0 0 2 -48 -64 62 2 0 96 0 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+[DEBUG] allocator_buddies_system [Deallocate] [Finish]
+
+[DEBUG] allocator_buddies_system [Destructor] [Finish]
 

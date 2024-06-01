@@ -25,16 +25,13 @@ CMAKE_AR:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDef
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Debug
-
-//Enable colored diagnostics throughout.
-CMAKE_COLOR_DIAGNOSTICS:BOOL=ON
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:STRING=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
+CMAKE_CXX_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -52,7 +49,7 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //C compiler
-CMAKE_C_COMPILER:STRING=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+CMAKE_C_COMPILER:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -191,7 +188,7 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=14.0
 
 //The product will be built against the headers and libraries located
 // inside the indicated SDK.
-CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk
+CMAKE_OSX_SYSROOT:PATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -518,6 +515,114 @@ mp_os_allctr_allctr_srtd_lst_tests_IS_TOP_LEVEL:STATIC=OFF
 mp_os_allctr_allctr_srtd_lst_tests_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/allocator/allocator_sorted_list/tests
 
 //Value Computed by CMake
+mp_os_arthmtc_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic
+
+//Value Computed by CMake
+mp_os_arthmtc_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Burnikel_Ziegler_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Burnikel_Ziegler_dvsn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Burnikel_Ziegler_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Karatsuba_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Karatsuba_mltplctn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Karatsuba_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Newton_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Newton_dvsn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Newton_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_Schonhage_Strassen_mltplctn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/Schonhage_Strassen_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_bgnt_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/big_integer
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/trivial_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_dvsn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/trivial_division
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/trivial_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/tests/trivial_multiplication
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/continued_fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_cntnd_frctn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/continued_fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/fraction
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+mp_os_arthmtc_frctn_SOURCE_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/arithmetic/fraction
+
+//Value Computed by CMake
 mp_os_assctv_cntnr_BINARY_DIR:STATIC=/Users/ivan/desktop/c++/cpp_labs/associative_container
 
 //Value Computed by CMake
@@ -830,7 +935,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=36
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=50
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

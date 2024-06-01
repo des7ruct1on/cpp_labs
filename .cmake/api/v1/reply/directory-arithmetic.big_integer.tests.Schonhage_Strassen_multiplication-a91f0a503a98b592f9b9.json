@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arithmetic/big_integer/tests/Schonhage_Strassen_multiplication",
+		"source" : "arithmetic/big_integer/tests/Schonhage_Strassen_multiplication"
+	}
+}

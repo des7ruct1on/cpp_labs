@@ -112,13 +112,13 @@ allocator_boundary_tags::allocator_boundary_tags(size_t space_size, allocator *p
 
     allocator_with_fit_mode::fit_mode fit_mode = get_fit_mode();
 
-    void * prev_filled_block = nullptr;
-    void * cur_filled_block = get_first_filled_block();
-    void * need_block = nullptr;
+    void* prev_filled_block = nullptr;
+    void* cur_filled_block = get_first_filled_block();
+    void* need_block = nullptr;
     size_t prev_size = 0;
 
-    void * need_prev_ptr = nullptr;
-    void * need_next_ptr = nullptr;
+    void* need_prev_ptr = nullptr;
+    void* need_next_ptr = nullptr;
 
     size_t available_block_size = get_size_memory();
     void * cur_avail_block;
@@ -259,8 +259,8 @@ void allocator_boundary_tags::deallocate(void *at) {
 
     }
 
-    void * prev_block = get_prev_block(block);
-    void * next_block =  get_next_block(block);
+    void* prev_block = get_prev_block(block);
+    void* next_block =  get_next_block(block);
 
     concat_block(prev_block, next_block);
 
@@ -274,7 +274,7 @@ void allocator_boundary_tags::deallocate(void *at) {
 }
 
 size_t allocator_boundary_tags::get_available_memory() const noexcept {
-    void * cur = get_first_filled_block();
+    void* cur = get_first_filled_block();
     if (cur == nullptr) {
         return get_size_memory();
     }
@@ -432,7 +432,7 @@ void allocator_boundary_tags::concat_block(void* prev, void* next) noexcept {
     if (prev != nullptr) {
         void ** new_next = reinterpret_cast<void**>(reinterpret_cast<unsigned char *>(prev) + sizeof(size_t) + sizeof(allocator*) + sizeof(void*));
         *new_next = next;
-    }else {
+    } else {
         set_first_filled_block(next);
     }
     if (next != nullptr) {

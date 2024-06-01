@@ -62,18 +62,31 @@ private:
 private:
     
     inline std::string get_typename() const noexcept override;
-    void * get_first_available_block() const noexcept;
-    allocator::block_size_t get_available_block_size(void *block_address) const noexcept;
-    void * get_available_block_next_block_address(void *block_address) const noexcept;
-    allocator::block_size_t get_occupied_block_size(void *block_address) const noexcept;
-    void * find_block(allocator_with_fit_mode::fit_mode fit_mode, size_t requested_size);
-    void set_first_available_block(void * first_available_block) const noexcept;
-    void * get_first_block() const noexcept;
-    void clear_available_block(void * block) const noexcept;
+
+    void* get_first_available_block() const noexcept;
+
+    allocator::block_size_t get_available_block_size(void* block_address) const noexcept;
+
+    void* get_available_block_next_block_address(void* block_address) const noexcept;
+
+    allocator::block_size_t get_occupied_block_size(void* block_address) const noexcept;
+
+    void* find_block(allocator_with_fit_mode::fit_mode fit_mode, size_t requested_size);
+
+    void set_first_available_block(void* first_available_block) const noexcept;
+
+    void* get_first_block() const noexcept;
+
+    void clear_available_block(void* block) const noexcept;
+
     void merge_blocks(int status_free, void* first, void* second) noexcept;
-    allocator * get_occupied_block_allocator(void * block) const noexcept;
+
+    allocator* get_occupied_block_allocator(void * block) const noexcept;
+
     void print_blocks_info(std::vector<allocator_test_utils::block_info> blocks_info) const noexcept;
-    std::string get_block_info(void * block) const noexcept;
+    
+    std::string get_block_info(void* block) const noexcept;
+    
     std::mutex & get_mutex() const noexcept;
 };
 

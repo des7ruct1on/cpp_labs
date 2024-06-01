@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arithmetic/big_integer/tests/big_integer",
+		"source" : "arithmetic/big_integer/tests/big_integer"
+	}
+}

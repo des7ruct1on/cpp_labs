@@ -100,7 +100,7 @@ allocator_sorted_list::allocator_sorted_list(size_t space_size, allocator *paren
     debug_with_guard(get_typename() + " [START] " + func);
 
     auto req_size = value_size * values_count; // need size
-    if (req_size < sizeof(void*)) { // if need size < -> we have to chenge requested size to min
+    if (req_size < sizeof(void*)) { // if need size < -> we have to change requested size to min
         req_size = sizeof(void*);
         warning_with_guard(get_typename() + " size has been changed to sizeof(void*)\n");
     }
@@ -116,7 +116,7 @@ allocator_sorted_list::allocator_sorted_list(size_t space_size, allocator *paren
     void* next = nullptr;
     size_t prev_size = 0;
 
-    void* current = get_first_available_block(); // get first sree block
+    void* current = get_first_available_block(); // get first free block
     void* previous = nullptr;
 
     while (current != nullptr) { // until cur exists
@@ -164,7 +164,7 @@ allocator_sorted_list::allocator_sorted_list(size_t space_size, allocator *paren
         req_size += blocks_sizes_difference;
         res_size = req_size + _meta_size;
     } else if (blocks_sizes_difference > 0) { // if usual case 
-        void ** new_next = reinterpret_cast<void**>(reinterpret_cast<unsigned char *>(block) + res_size);
+        void** new_next = reinterpret_cast<void**>(reinterpret_cast<unsigned char *>(block) + res_size);
         *reinterpret_cast<size_t*>(new_next + 1) = blocks_sizes_difference - sizeof(void*) - sizeof(size_t);
 
         // if right block is not free
@@ -209,7 +209,7 @@ allocator_sorted_list::allocator_sorted_list(size_t space_size, allocator *paren
     return res;
 }
 
-std::string allocator_sorted_list::get_block_info(void * block) const noexcept {
+std::string allocator_sorted_list::get_block_info(void* block) const noexcept {
     unsigned char* bytes = reinterpret_cast<unsigned char *>(block); // ptr of bytes
     size_t size = get_occupied_block_size(bytes - sizeof(size_t) - sizeof(allocator*));
 
@@ -223,7 +223,7 @@ std::string allocator_sorted_list::get_block_info(void * block) const noexcept {
     return arr;
 }
 
-void allocator_sorted_list::deallocate(void *at) {
+void allocator_sorted_list::deallocate(void* at) {
     std::lock_guard<std::mutex> mutex_guard(get_mutex());
     std::string func = "deallocation\n";
 

@@ -60,23 +60,23 @@ private:
 
     void * get_first_block() const noexcept;
 
-    size_t get_size_block(void * block) const noexcept;
+    size_t get_size_block(void* block) const noexcept;
 
-    allocator * get_allocator_from_block(void * block) const noexcept;
+    allocator * get_allocator_from_block(void* block) const noexcept;
 
-    void * get_prev_block(void * block) const noexcept;
+    void * get_prev_block(void* block) const noexcept;
 
-    void * get_next_block(void * block) const noexcept;
+    void * get_next_block(void* block) const noexcept;
 
-    void concat_block(void * prev, void * next) noexcept;
+    void concat_block(void* prev, void* next) noexcept;
 
     std::mutex& get_mutex() const noexcept;
 
     size_t get_size_memory() const noexcept;
 
-    void set_first_filled_block(void * block) const noexcept;
+    void set_first_filled_block(void* block) const noexcept;
 
-    void clear_block(void * block) const noexcept;
+    void clear_block(void* block) const noexcept;
 
     void * get_end_ptr() const noexcept;
 
@@ -86,7 +86,7 @@ private:
 
     std::string block_status(bool state) const noexcept;
 
-    std::string get_block_info(void * block) const noexcept;
+    std::string get_block_info(void* block) const noexcept;
     
 };
 

@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include -I/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -g -std=c++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGSarm64 = -std=c++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0  -DGTEST_HAS_PTHREAD=1  
 
-CXX_FLAGS = -g -std=c++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0 -fcolor-diagnostics  -DGTEST_HAS_PTHREAD=1  
+CXX_FLAGS = -std=c++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0  -DGTEST_HAS_PTHREAD=1  
 

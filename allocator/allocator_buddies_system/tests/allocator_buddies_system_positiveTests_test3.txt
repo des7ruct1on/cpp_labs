@@ -1,0 +1,10 @@
+[INFORMATION] allocator_buddies_systemcurrent state of blocks: <occup><16> | <avail><16> | <avail><32> | <avail><64> | <avail><128> | 
+
+[INFORMATION] allocator_buddies_systemcurrent state of blocks: <occup><16> | <occup><16> | <avail><32> | <avail><64> | <avail><128> | 
+
+[INFORMATION] allocator_buddies_system current state of blocks: <avail><16> | <occup><16> | <avail><32> | <avail><64> | <avail><128> | 
+
+[INFORMATION] allocator_buddies_system current state of blocks: <avail><256> | 
+
+[INFORMATION] allocator_buddies_system current state of blocks: <avail><256> | 
+

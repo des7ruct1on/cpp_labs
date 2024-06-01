@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arithmetic/big_integer/tests/trivial_multiplication",
+		"source" : "arithmetic/big_integer/tests/trivial_multiplication"
+	}
+}

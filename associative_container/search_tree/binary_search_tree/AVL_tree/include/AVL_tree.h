@@ -4,14 +4,12 @@
 #include <binary_search_tree.h>
 
 template<typename tkey, typename tvalue>
-class AVL_tree final:
-    public binary_search_tree<tkey, tvalue>
+class AVL_tree final: public binary_search_tree<tkey, tvalue>
 {
 
 private:
     
-    struct node final:
-        binary_search_tree<tkey, tvalue>::node
+    struct node final: binary_search_tree<tkey, tvalue>::node
     {
 
     public:

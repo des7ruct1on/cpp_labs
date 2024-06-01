@@ -89,7 +89,7 @@ inline logger *allocator_global_heap::get_logger() const {
 }
 
 inline std::string allocator_global_heap::get_typename() const noexcept {
-    trace_with_guard("allocator_global_heap getting typename has started");
+    trace_with_guard("allocator_global_heap getting typename has started")->
     trace_with_guard("allocator_global_heap getting typename has ended");
     return "allocator_global_heap";
 }

@@ -46,8 +46,9 @@ TEST(positiveTests, test1)
     std::cout << second_block << std::endl;
     std::cout << sizeof(first_block) << "><" << sizeof(second_block)<< std::endl;
     std::cout << (second_block - (first_block + 10)) << std::endl;
-    ASSERT_EQ(first_block + 10, second_block);
-    ASSERT_EQ(second_block + 10, third_block);
+    auto m = sizeof(size_t) + sizeof(allocator*) + 2 * sizeof(void*);
+    ASSERT_EQ(first_block + 10 + m / 4, second_block);
+    ASSERT_EQ(second_block + 10 + m / 4, third_block);
     
     subject->deallocate(const_cast<void *>(reinterpret_cast<void const *>(second_block)));
     
@@ -57,8 +58,8 @@ TEST(positiveTests, test1)
     the_same_subject->set_fit_mode(allocator_with_fit_mode::fit_mode::the_best_fit);
     auto const *fifth_block = reinterpret_cast<int const *>(subject->allocate(sizeof(int), 1));
     
-    ASSERT_EQ(first_block + 10, fourth_block);
-    ASSERT_EQ(third_block + 10, fifth_block);
+    ASSERT_EQ(first_block + 10 + m / 4, fourth_block);
+    ASSERT_EQ(third_block + 10 + m / 4, fifth_block);
     
     subject->deallocate(const_cast<void *>(reinterpret_cast<void const *>(first_block)));
     subject->deallocate(const_cast<void *>(reinterpret_cast<void const *>(third_block)));

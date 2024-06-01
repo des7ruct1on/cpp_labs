@@ -27,7 +27,7 @@ class server_logger final: public logger {
     pid_t process_id;
 #endif
 
-    mutable size_t session_id;
+    mutable size_t id;
 
 
 public:

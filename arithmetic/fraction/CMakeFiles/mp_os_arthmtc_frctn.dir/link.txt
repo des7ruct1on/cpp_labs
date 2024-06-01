@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libmp_os_arthmtc_frctn.a CMakeFiles/mp_os_arthmtc_frctn.dir/src/fraction.cpp.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libmp_os_arthmtc_frctn.a

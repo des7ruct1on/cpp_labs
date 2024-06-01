@@ -9,7 +9,9 @@
 #include <sstream>
 
 
-class allocator_global_heap final: public allocator, private logger_guardant, private typename_holder {
+class allocator_global_heap final: 
+    public allocator, private logger_guardant, private typename_holder 
+{
 
 private:
     
@@ -36,8 +38,6 @@ public:
     [[nodiscard]] void *allocate(size_t value_size, size_t values_count) override;
     
     void deallocate(void *at) override;
-    
-    void foo() {};
 
 };
 

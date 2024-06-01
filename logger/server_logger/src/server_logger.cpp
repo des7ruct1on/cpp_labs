@@ -9,9 +9,7 @@ std::map<std::string, std::pair<msqid_ds, size_t>> server_logger::queues_users =
 server_logger::server_logger(server_logger const &other) = default;
 
 server_logger::server_logger(std::map<std::string, std::set<logger::severity>> const keys) {
-    for (auto it = keys.begin(); it != keys.end(); ++it) {
-        auto &key = it->first;
-        auto &set = it->second;
+    for (auto &[key, set] : keys) {
         if (queues_users.find(key) == queues_users.end()) {
 #ifdef _WIN32
             HANDLE q = CreateFileA(key.c_str(), GENERIC_WRITE, 0, nullptr, OPEN_EXISTING, 0, nullptr);
@@ -41,7 +39,7 @@ server_logger::server_logger(std::map<std::string, std::set<logger::severity>> c
 #else
     process_id = getpid();
 #endif
-    session_id = 0;
+    id = 0;
 }
 
 server_logger &server_logger::operator=(server_logger const &other) = default;
@@ -51,10 +49,8 @@ server_logger::server_logger(server_logger &&other) noexcept = default;
 server_logger &server_logger::operator=(server_logger &&other) noexcept = default;
 
 server_logger::~server_logger() noexcept {
-    for (auto it = queue.begin(); it != queue.end(); ++it) {
-        auto &key = it->first;
-        auto &pr = it->second;
-        if (--_queues_users[key].second == 0) {
+     for (auto &[key, pr] : _queues)  {
+        if (--queues_users[key].second == 0) {
 #ifdef _WIN32
             CloseHandle(pair.first);
             queues_users.erase(key);
@@ -84,7 +80,7 @@ logger const *server_logger::log(const std::string &text, logger::severity sever
         ptr += sizeof(bool);
         *reinterpret_cast<pid_t* >(ptr) = process_id;
         ptr += sizeof(pid_t);
-        *reinterpret_cast<size_t* >(ptr) = session_id;
+        *reinterpret_cast<size_t* >(ptr) = id;
         ptr += sizeof(size_t);
         *reinterpret_cast<size_t* >(ptr) = msg_count;
         ptr += sizeof(size_t);
@@ -106,7 +102,7 @@ logger const *server_logger::log(const std::string &text, logger::severity sever
             ptr += sizeof(bool);
             *reinterpret_cast<pid_t* >(ptr) = process_id;
             ptr += sizeof(pid_t);
-            *reinterpret_cast<size_t* >(ptr) = session_id;
+            *reinterpret_cast<size_t* >(ptr) = id;
             ptr += sizeof(size_t);
 
             size_t position = msg_size * i;
@@ -130,7 +126,7 @@ logger const *server_logger::log(const std::string &text, logger::severity sever
 #endif
         }
     }
-    session_id++;
+    id++;
     return this;
 
 }

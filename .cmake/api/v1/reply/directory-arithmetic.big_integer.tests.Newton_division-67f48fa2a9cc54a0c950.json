@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "arithmetic/big_integer/tests/Newton_division",
+		"source" : "arithmetic/big_integer/tests/Newton_division"
+	}
+}
