@@ -1,34 +1,44 @@
 #ifndef MATH_PRACTICE_AND_OPERATING_SYSTEMS_SERVER_LOGGER_H
 #define MATH_PRACTICE_AND_OPERATING_SYSTEMS_SERVER_LOGGER_H
 
-#include <cstring>
 #include "../../logger/include/logger.h"
 #include "server_logger_builder.h"
 
+#include <cstring>
+#include <set>
 
-#define MESSAGE_SIZE 1024
-class server_logger final: public logger {
+class server_logger final:
+    public logger
+{
+    
+    friend class server_logger_builder;
 
-    std::map<std::string, std::set<logger::severity>> keys;
+private:
 
-    server_logger(std::map<std::string, const std::set<logger::severity>> keys);
+    pid_t _process_id;
 
-#ifdef _WIN32
-    std::map<std::string, std::pair<HANDLE, std::set<logger::severity>>> queues;
+    size_t mutable _request;
 
-    static std::map<std::string, std::pair<HANDLE, size_t>> queues_users;
+    #ifdef _WIN32
+        std::map<std::string, std::pair<HANDLE, std::set<logger::severity>>> _queues; // name, (queue id, severities)
 
-    DWORD process_id;
-#else
-    std::map<std::string, std::pair<msqid_ds, std::set<logger::severity>>> queues;
+        static std::map<std::string, std::pair<HANDLE, int>> _queues_users; // name, (queue id, number of users)
+    #elif __linux__
 
-    static std::map<std::string, std::pair<msqid_ds, size_t>> queues_users;
+        std::map<std::string, std::pair<mqd_t, std::set<logger::severity>>> _queues; // name, (queue id, severities)
 
-    pid_t process_id;
-#endif
+        static std::map<std::string, std::pair<mqd_t, int>> _queues_users; // name, (queue id, number of users)
+    #elif __APPLE__
 
-    mutable size_t id;
+        std::map<std::string, std::pair<mach_port_t, std::set<logger::severity>>> _queues; // name, (queue id, severities)
 
+        static std::map<std::string, std::pair<mach_port_t, int>> _queues_users; // name, (queue id, number of users)
+
+    #endif
+
+    server_logger(std::map<std::string, std::set<logger::severity>> const logs);
+
+    void close_streams();
 
 public:
 
@@ -42,8 +52,10 @@ public:
 
     ~server_logger() noexcept final;
 
+public:
+
     [[nodiscard]] logger const *log(const std::string &message, logger::severity severity) const noexcept override;
 
 };
 
-#endif
+#endif //MATH_PRACTICE_AND_OPERATING_SYSTEMS_SERVER_LOGGER_H

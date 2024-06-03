@@ -1,132 +1,202 @@
 #include "../include/server_logger.h"
 
-#ifdef _WIN32
-std::map<std::string, std::pair<HANDLE, size_t>> server_logger::queues_users = std::map<std::string, std::pair<HANDLE, size_t>>();
-#else
-std::map<std::string, std::pair<msqid_ds, size_t>> server_logger::queues_users = std::map<std::string, std::pair<msqid_ds, size_t>>();
+#define MESSAGE_SIZE 100
+
+#ifdef __APPLE__
+#include <mach/mach.h>
 #endif
 
-server_logger::server_logger(server_logger const &other) = default;
-
-server_logger::server_logger(std::map<std::string, std::set<logger::severity>> const keys) {
-    for (auto &[key, set] : keys) {
-        if (queues_users.find(key) == queues_users.end()) {
 #ifdef _WIN32
-            HANDLE q = CreateFileA(key.c_str(), GENERIC_WRITE, 0, nullptr, OPEN_EXISTING, 0, nullptr);
-            if (q == INVALID_HANDLE_VALUE) {
-                throw std::runtime_error("Can`t open queue");
-            }
 
-#else
-            msqid_ds q = mq_open(key.c_str(), O_WRONLY, 0644);
-            if (q == (msqid_ds) - 1) {
-                throw std::runtime_error("Can`t open queue");
-            }
+std::map<std::string, std::pair<HANDLE, int>> server_logger::_queues_users = std::map<std::string, std::pair<HANDLE, int>>();
+
+#elif __linux__
+
+std::map<std::string, std::pair<mqd_t, int>> server_logger::_queues_users = std::map<std::string, std::pair<mqd_t, int>>();
+
+#elif __APPLE__
+
+std::map<std::string, std::pair<mach_port_t, int>> server_logger::_queues_users = std::map<std::string, std::pair<mach_port_t, int>>();
 
 #endif
-            queues_users[key].first = q;
-            queues_users[key].second = 1;
-            queues[key].first = q;
 
-        } else {
-            queues_users[key].second++;
-            queues[key].first = queues_users[key].first;
+server_logger::server_logger(std::map<std::string, std::set<logger::severity>> const logs)
+{
+    std::runtime_error opening_queue_error("Error opening queue");
+
+    #ifdef _WIN32
+        
+        for (auto &[file, severities] : logs)
+        {
+            if (_queues_users.find(file) == _queues_users.end())
+            {
+                HANDLE pipe = CreateFileA(file.c_str(), GENERIC_WRITE, 0, nullptr, OPEN_EXISTING, 0, nullptr);
+                if (pipe == INVALID_HANDLE_VALUE) throw opening_queue_error;
+                _queues_users[file].first = pipe;
+            }
+            _queues_users[file].second++;
+            _queues[file].first = _queues_users[file].first;
+            _queues[file].second = severities;
         }
-        queues[key].second = set;
-    }
-#ifdef _WIN32
-    process_id = GetCurrentProcessId();
-#else
-    process_id = getpid();
-#endif
-    id = 0;
+
+    #elif __linux__
+
+        struct mq_attr queue_attributes; // атрибуты очереди
+        queue_attributes.mq_maxmsg = 10; // максимальное количество сообщений в очереди
+        queue_attributes.mq_msgsize = MESSAGE_SIZE; // максимальная размер сообщения
+
+        for (auto &[file, severities] : logs)
+        {
+            if (_queues_users.find(file) == _queues_users.end())
+            {
+                mqd_t descriptor = mq_open(file.c_str(), O_WRONLY, 0644, &queue_attributes);
+                if (descriptor < 0) throw opening_queue_error;
+                _queues_users[file].first = descriptor;
+            }
+            _queues_users[file].second++;
+            _queues[file].first = _queues_users[file].first;
+            _queues[file].second = severities;
+        }
+        
+    #elif __APPLE__
+
+        for (auto &[file, severities] : logs)
+        {
+            if (_queues_users.find(file) == _queues_users.end())
+            {
+                mach_port_t port;
+                kern_return_t result = mach_port_allocate(mach_task_self(), MACH_PORT_RIGHT_RECEIVE, &port);
+                if (result != KERN_SUCCESS) throw opening_queue_error;
+                _queues_users[file].first = port;
+            }
+            _queues_users[file].second++;
+            _queues[file].first = _queues_users[file].first;
+            _queues[file].second = severities;
+        }
+
+    #endif
+
+    _request = 0;
 }
 
-server_logger &server_logger::operator=(server_logger const &other) = default;
 
-server_logger::server_logger(server_logger &&other) noexcept = default;
+server_logger::server_logger(server_logger const &other) :
+    _queues(other._queues)
+{
+    for (auto &[key, pair] : _queues_users) pair.second++;
+}
 
-server_logger &server_logger::operator=(server_logger &&other) noexcept = default;
+server_logger &server_logger::operator=(server_logger const &other)
+{
+    if (this == &other) return *this;
+    close_streams();
+    _queues = other._queues;
+    for (auto &[key, pair] : _queues) _queues_users[key].second++;
+    return *this;
+}
 
-server_logger::~server_logger() noexcept {
-     for (auto &[key, pr] : _queues)  {
-        if (--queues_users[key].second == 0) {
-#ifdef _WIN32
-            CloseHandle(pair.first);
-            queues_users.erase(key);
-#else
-            mq_close(pair.first);
-            queues_users.erase(key);
-#endif
+server_logger::server_logger(server_logger &&other) noexcept :
+    _queues(std::move(other._queues)) {}
 
-        }
+server_logger &server_logger::operator=(server_logger &&other) noexcept
+{
+    if (this == &other) return *this;
+    close_streams();
+    _queues = std::move(other._queues);
+    return *this;
+}
+
+void server_logger::close_streams()
+{
+    for (auto & [file, pair] : _queues)
+    {
+        if (--_queues_users[file].second != 0) continue;
+        #ifdef _WIN32
+            ClodeHandle(_queues_users[file].first);
+        #elif __linux__
+            mq_close(_queues_users[file].first);
+        #elif __APPLE__
+            mach_port_destroy(mach_task_self(), _queues_users[file].first);
+        #endif
+        _queues_users.erase(file);
+
     }
 }
 
-logger const *server_logger::log(const std::string &text, logger::severity severity) const noexcept {
-    size_t meta_size = sizeof(bool) + sizeof(size_t) + sizeof(pid_t);
-    size_t msg_size = MESSAGE_SIZE - meta_size;
-    size_t msg_count = text.size() / msg_size + 1;
-    for (auto it = queues.begin(); it != queues.end(); ++it) {
-        auto &path = it->first;
-        auto &pr = it->second;
-        if (pr.second.find(severity) == pr.second.end()) continue;
-        const char* severity_str = severity_to_string(severity).c_str();
-        char buffer[MESSAGE_SIZE];
-        char* ptr = buffer;
+server_logger::~server_logger() noexcept
+{
+    close_streams();
+}
 
 
-        *reinterpret_cast<bool* >(ptr) = false;
+logger const *server_logger::log(const std::string &text, logger::severity severity) const noexcept
+{
+    size_t meta_size = sizeof(size_t) + sizeof(size_t) + sizeof(pid_t) + sizeof(const char *) + sizeof(bool);
+    size_t message_size = MESSAGE_SIZE - meta_size;
+    size_t packets_count = text.size() / message_size + 1;
+
+    char info_message[meta_size];
+    char *ptr;
+
+    ptr = info_message;
+    *reinterpret_cast<bool*>(ptr) = false; // если ложь, то идет инфо сообщение
+    ptr += sizeof(bool);
+    *reinterpret_cast<size_t*>(ptr) = packets_count;
+    ptr += sizeof(size_t);
+    *reinterpret_cast<size_t*>(ptr) = _request;
+    ptr += sizeof(size_t);
+    *reinterpret_cast<pid_t*>(ptr) = _process_id;
+    ptr += sizeof(pid_t);
+    char const * severity_string = severity_to_string(severity).c_str();
+    strcpy(ptr, severity_string);
+
+    char message[MESSAGE_SIZE];
+
+    for (auto & [file, pair] : _queues)
+    {
+        if (pair.second.find(severity) == pair.second.end()) continue;
+
+        // Отправка информационного сообщения
+        #ifdef _WIN32
+            DWORD bytes_written;
+            WriteFile(pair.first, info_message, MESSAGE_SIZE, &bytes_written, nullptr);
+        #elif __linux__
+            mq_send(pair.first, info_message, MESSAGE_SIZE, 0); // отправка инфо сообщения
+        #elif __APPLE__
+            mach_msg_header_t msg_header;
+            msg_header.msgh_bits = MACH_MSGH_BITS_SET(MACH_MSG_TYPE_COPY_SEND, 0, 0, 0);
+            msg_header.msgh_size = sizeof(info_message);
+            msg_header.msgh_remote_port = pair.first;
+            msg_header.msgh_local_port = MACH_PORT_NULL;
+            msg_header.msgh_id = 0;
+
+            mach_msg(&msg_header, MACH_SEND_MSG, sizeof(info_message), 0, MACH_PORT_NULL, MACH_MSG_TIMEOUT_NONE, MACH_PORT_NULL);
+        #endif
+
+        ptr = message;
+        *reinterpret_cast<bool*>(ptr) = true;
         ptr += sizeof(bool);
-        *reinterpret_cast<pid_t* >(ptr) = process_id;
+        *reinterpret_cast<size_t*>(ptr) = _request;
+        ptr += sizeof(size_t);
+        *reinterpret_cast<pid_t*>(ptr) = _process_id;
         ptr += sizeof(pid_t);
-        *reinterpret_cast<size_t* >(ptr) = id;
-        ptr += sizeof(size_t);
-        *reinterpret_cast<size_t* >(ptr) = msg_count;
-        ptr += sizeof(size_t);
-
-        srcpy(ptr, severity_str);
-#ifdef _WIN32
-        DWORD bytes_count;
-        WriteFile(pr.first, buffer, MESSAGE_SIZE, &bytes_count, nullptr);
-
-#else
-        mq_send(pr.first, buffer, MESSAGE_SIZE, 0);
-
-#endif
-
-        for (int i = 0; i < msg_count; i++) {
-            char tmp_msg[MESSAGE_SIZE];
-            ptr = tmp_msg;
-            *reinterpret_cast<bool* >(ptr) = true;
-            ptr += sizeof(bool);
-            *reinterpret_cast<pid_t* >(ptr) = process_id;
-            ptr += sizeof(pid_t);
-            *reinterpret_cast<size_t* >(ptr) = id;
-            ptr += sizeof(size_t);
-
-            size_t position = msg_size * i;
-            size_t left_size = test.size() - position;
-            size_t substr_size;
-            if (left_size < msg_size) {
-                substr_size = left_size;
-            } else {
-                substr_size = msg_size;
-            }
-
+        for (size_t i = 0; i < packets_count; ++i)
+        {
+            size_t pos = i * message_size;
+            size_t rest = text.size() - pos;
+            size_t substr_size = (rest < message_size) ? rest : message_size;
             memcpy(ptr, text.substr(pos, substr_size).c_str(), substr_size);
-            *(ptr + substr_size) = '\0';
-
-#ifdef _WIN32
-        WriteFile(pr.first, tmp_msg, MESSAGE_SIZE, &bytes_count, nullptr);
-
-#else
-        mq_send(pr.first, tmp_msg, MESSAGE_SIZE, 0);
-
-#endif
+            *(ptr + substr_size) = 0;
+            // Отправка сообщения с данными
+            #ifdef _WIN32
+                WriteFile(pair.first, message, MESSAGE_SIZE, &bytes_written, nullptr);
+            #elif __linux__
+                mq_send(pair.first, message, MESSAGE_SIZE, 0);
+            #elif __APPLE__
+                mach_msg(&msg_header, MACH_SEND_MSG, sizeof(message), 0, MACH_PORT_NULL, MACH_MSG_TIMEOUT_NONE, MACH_PORT_NULL);
+            #endif
         }
     }
-    id++;
+    _request++;
     return this;
-
 }
