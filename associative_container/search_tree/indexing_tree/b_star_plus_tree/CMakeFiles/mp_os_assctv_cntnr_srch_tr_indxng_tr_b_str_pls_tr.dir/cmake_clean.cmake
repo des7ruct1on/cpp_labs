@@ -1,3 +1,9 @@
+file(REMOVE_RECURSE
+  ".1.0"
+  "libmp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.1.0.dylib"
+  "libmp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dylib"
+  "libmp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.pdb"
+)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

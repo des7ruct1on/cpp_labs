@@ -643,6 +643,110 @@ mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests/fast:
 .PHONY : mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests/fast
 
 #=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build.make associative_container/search_tree/indexing_tree/b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build.make associative_container/search_tree/indexing_tree/b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build.make associative_container/search_tree/indexing_tree/b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast
+
+#=============================================================================
+# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+
+# Build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
+
+# fast build rule for target.
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests/fast:
+	$(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build
+.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests/fast
+
+#=============================================================================
 # Target rules for targets named mp_os_cmmn
 
 # Build rule for target.
@@ -769,6 +873,14 @@ help:
 	@echo "... mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr"
 	@echo "... mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_spl_tr_tests"
 	@echo "... mp_os_assctv_cntnr_srch_tr_bnr_srch_tr_tests"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr"
+	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests"
 	@echo "... mp_os_cmmn"
 	@echo "... mp_os_lggr_clnt_lggr"
 	@echo "... mp_os_lggr_clnt_lggr_tests"

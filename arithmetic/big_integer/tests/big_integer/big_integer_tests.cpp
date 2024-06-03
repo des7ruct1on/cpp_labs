@@ -207,6 +207,30 @@ TEST(positive_tests, test9)
     delete logger;
 }
 
+TEST(positive_tests, test10)
+{
+    logger *logger = create_logger(std::vector<std::pair<std::string, logger::severity>>
+        {
+            {
+                "bigint_logs.txt",
+                logger::severity::information
+            },
+        });
+    
+    big_integer bigint_1("144");
+    big_integer bigint_2("175");
+    
+    big_integer result_of_remainder = bigint_1 * bigint_2;
+
+    std::stringstream ss;
+    ss << result_of_remainder;
+    std::string result_string = ss.str();
+    //std::cout << result_string << std::endl;
+    EXPECT_TRUE(result_string == "25200");
+    
+    delete logger;
+}
+
 int main(
     int argc,
     char **argv)

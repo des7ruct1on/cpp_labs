@@ -43,6 +43,7 @@ TEST(positive_tests, test1)
     big_integer bigint_1("2423545763");
     big_integer bigint_2("3657687978");
     big_integer::multiply(bigint_1, bigint_2, nullptr, big_integer::multiplication_rule::trivial);
+    //std::cout << (std::ostringstream() << bigint_1).str() << std::endl;
 
     EXPECT_TRUE((std::ostringstream() << bigint_1).str() == "8864574201457937214");
 

@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree
+CMAKE_SOURCE_DIR = /Users/ivan/desktop/c++/cpp_labs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree
+CMAKE_BINARY_DIR = /Users/ivan/desktop/c++/cpp_labs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/CMakeFiles /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/CMakeFiles 0
+	cd /Users/ivan/desktop/c++/cpp_labs && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/CMakeFiles /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree//CMakeFiles/progress.marks
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,174 +148,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ivan/desktop/c++/cpp_labs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr/fast:
-	$(MAKE) $(MAKESILENT) -f b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build.make b_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build.make b_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr/fast:
-	$(MAKE) $(MAKESILENT) -f b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build.make b_star_plus_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr/fast:
-	$(MAKE) $(MAKESILENT) -f b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build.make b_star_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build.make b_star_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast:
-	$(MAKE) $(MAKESILENT) -f b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build.make b_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr/fast
-
-#=============================================================================
-# Target rules for targets named mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
-
-# Build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests
-
-# fast build rule for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests/fast:
-	$(MAKE) $(MAKESILENT) -f b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build.make b_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests.dir/build
-.PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests/fast
 
 # Help Target
 help:
@@ -329,18 +173,6 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... gmock"
-	@echo "... gmock_main"
-	@echo "... gtest"
-	@echo "... gtest_main"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_pls_tr_tests"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_tr_tests"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr"
-	@echo "... mp_os_assctv_cntnr_srch_tr_indxng_tr_b_tr_tests"
 .PHONY : help
 
 
@@ -352,6 +184,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ivan/desktop/c++/cpp_labs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

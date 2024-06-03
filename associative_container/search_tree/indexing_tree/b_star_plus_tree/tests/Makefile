@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.29.0/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree
+CMAKE_SOURCE_DIR = /Users/ivan/desktop/c++/cpp_labs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree
+CMAKE_BINARY_DIR = /Users/ivan/desktop/c++/cpp_labs
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/CMakeFiles /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/b_star_plus_tree/tests//CMakeFiles/progress.marks
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b_star_plus_tree/tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/CMakeFiles 0
+	cd /Users/ivan/desktop/c++/cpp_labs && $(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/CMakeFiles /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/b_star_plus_tree/tests//CMakeFiles/progress.marks
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ivan/desktop/c++/cpp_labs/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b_star_plus_tree/tests/clean
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,31 +148,31 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b_star_plus_tree/tests/preinstall
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b_star_plus_tree/tests/preinstall
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/ivan/desktop/c++/cpp_labs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule
-.PHONY : b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule
+associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule:
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule
+.PHONY : associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule
 
 # Convenience name for target.
-mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests: b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule
+mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests: associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/rule
 .PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests
 
 # fast build rule for target.
 mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests/fast:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build
 .PHONY : mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests/fast
 
 b_star_plus_tree_tests.o: b_star_plus_tree_tests.cpp.o
@@ -180,7 +180,7 @@ b_star_plus_tree_tests.o: b_star_plus_tree_tests.cpp.o
 
 # target to build an object file
 b_star_plus_tree_tests.cpp.o:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/b_star_plus_tree_tests.cpp.o
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/b_star_plus_tree_tests.cpp.o
 .PHONY : b_star_plus_tree_tests.cpp.o
 
 b_star_plus_tree_tests.i: b_star_plus_tree_tests.cpp.i
@@ -188,7 +188,7 @@ b_star_plus_tree_tests.i: b_star_plus_tree_tests.cpp.i
 
 # target to preprocess a source file
 b_star_plus_tree_tests.cpp.i:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/b_star_plus_tree_tests.cpp.i
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/b_star_plus_tree_tests.cpp.i
 .PHONY : b_star_plus_tree_tests.cpp.i
 
 b_star_plus_tree_tests.s: b_star_plus_tree_tests.cpp.s
@@ -196,7 +196,7 @@ b_star_plus_tree_tests.s: b_star_plus_tree_tests.cpp.s
 
 # target to generate assembly for a file
 b_star_plus_tree_tests.cpp.s:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(MAKE) $(MAKESILENT) -f b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/b_star_plus_tree_tests.cpp.s
+	cd /Users/ivan/desktop/c++/cpp_labs && $(MAKE) $(MAKESILENT) -f associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/build.make associative_container/search_tree/indexing_tree/b_star_plus_tree/tests/CMakeFiles/mp_os_assctv_cntnr_srch_tr_indxng_tr_b_str_pls_tr_tests.dir/b_star_plus_tree_tests.cpp.s
 .PHONY : b_star_plus_tree_tests.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/ivan/desktop/c++/cpp_labs && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

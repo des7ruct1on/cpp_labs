@@ -4,9 +4,9 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/b_star_tree/./include -isystem /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/_deps/googletest-src/googletest/include -isystem /Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/Users/ivan/desktop/c++/cpp_labs/logger/logger/./include -I/Users/ivan/desktop/c++/cpp_labs/logger/client_logger/./include -I/Users/ivan/desktop/c++/cpp_labs/common/./include -I/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include -I/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/indexing_tree/b_star_tree/./include -I/Users/ivan/desktop/c++/cpp_labs/associative_container/./include -I/Users/ivan/desktop/c++/cpp_labs/associative_container/search_tree/./include -I/Users/ivan/desktop/c++/cpp_labs/allocator/allocator/./include -isystem /Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include -isystem /Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0
+CXX_FLAGSarm64 = -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
 
-CXX_FLAGS = -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.4.sdk -mmacosx-version-min=14.0
+CXX_FLAGS = -std=c++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0
 
