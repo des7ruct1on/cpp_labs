@@ -1,0 +1,259 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "arithmetic/big_integer/tests/big_integer/mp_os_arthmtc_bg_intgr_tests_bgnt"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"arithmetic/big_integer/tests/big_integer/CMakeLists.txt",
+			"_deps/googletest-src/googletest/CMakeLists.txt",
+			"logger/client_logger/CMakeLists.txt",
+			"arithmetic/big_integer/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 15,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 18,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 22,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 161,
+				"parent" : 6
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 2,
+				"line" : 21,
+				"parent" : 8
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 3,
+				"line" : 17,
+				"parent" : 10
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-std=c++2b -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -mmacosx-version-min=14.0"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/common/./include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/logger/client_logger/./include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/logger/logger/./include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/_deps/json-src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/arithmetic/big_integer/./include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/allocator/allocator/./include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/Users/ivan/desktop/c++/cpp_labs/_deps/googletest-src/googletest"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2,
+					4
+				],
+				"standard" : "23"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 5,
+			"id" : "mp_os_allctr_allctr::@67a2d12acd41ed6b0bc3"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "gtest_main::@1ea2dfc0605fe3ab2a3f"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "mp_os_arthmtc_bg_intgr::@ef276916ed2ac9027e60"
+		},
+		{
+			"backtrace" : 3,
+			"id" : "mp_os_cmmn::@bfc844598bd03e848b3c"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mp_os_lggr_clnt_lggr::@1192419ba09c9016d213"
+		},
+		{
+			"backtrace" : 4,
+			"id" : "mp_os_lggr_lggr::@af94273c3084cfb43adb"
+		}
+	],
+	"id" : "mp_os_arthmtc_bg_intgr_tests_bgnt::@2949616bd59f656eaeb0",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "../../../../lib/libgtest_main.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../../../common/libmp_os_cmmn.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "../../../../logger/client_logger/libmp_os_lggr_clnt_lggr.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 5,
+				"fragment" : "../../libmp_os_arthmtc_bg_intgr.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "../../../../lib/libgtest.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 9,
+				"fragment" : "../../../../logger/logger/libmp_os_lggr_lggr.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 3,
+				"fragment" : "../../../../common/libmp_os_cmmn.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 11,
+				"fragment" : "../../../../allocator/allocator/libmp_os_allctr_allctr.a",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "mp_os_arthmtc_bg_intgr_tests_bgnt",
+	"nameOnDisk" : "mp_os_arthmtc_bg_intgr_tests_bgnt",
+	"paths" : 
+	{
+		"build" : "arithmetic/big_integer/tests/big_integer",
+		"source" : "arithmetic/big_integer/tests/big_integer"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "arithmetic/big_integer/tests/big_integer/big_integer_tests.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}

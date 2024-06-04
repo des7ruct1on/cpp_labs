@@ -2,9 +2,9 @@
 
 #include "../include/allocator_red_black_tree.h"
 
-allocator_red_black_tree::~allocator_red_black_tree()
+allocator_red_black_tree::~allocator_red_black_tree() 
 {
-	debug_with_guard(get_typename() + " destructor called");
+	debug_with_guard("Destructor of " + get_typename() + " started");
 	get_mutex().~mutex();
 	deallocate_with_guard(_trusted_memory);
 }
@@ -12,15 +12,13 @@ allocator_red_black_tree::~allocator_red_black_tree()
 
 allocator_red_black_tree::allocator_red_black_tree(allocator_red_black_tree &&other) noexcept : _trusted_memory(other._trusted_memory)
 {
-	debug_with_guard("Start move constructor of " + get_typename());
+	debug_with_guard("move constructor of " + get_typename() + " started");
 	other._trusted_memory = nullptr;
 }
-allocator_red_black_tree &allocator_red_black_tree::operator=(
-		allocator_red_black_tree &&other) noexcept
+allocator_red_black_tree &allocator_red_black_tree::operator=(allocator_red_black_tree &&other) noexcept
 {
-	debug_with_guard("Start assignment operator of " + get_typename());
-	if (this != &other)
-	{
+	debug_with_guard("move assign of " + get_typename() + " started");
+	if (this != &other) {
 		get_mutex().~mutex();
 		deallocate_with_guard(_trusted_memory);
 
@@ -38,12 +36,10 @@ allocator_red_black_tree::allocator_red_black_tree(
 {
 	size_t allocator_size = space_size + get_allocator_size_of_meta();
 
-	try
-	{
+	//trying to allocate
+	try {
 		_trusted_memory = parent_allocator == nullptr ? ::operator new(allocator_size) : parent_allocator->allocate(allocator_size, 1);
-	}
-	catch (std::bad_alloc const & ex)
-	{
+	} catch (std::bad_alloc const & ex) {
 		error_with_guard(get_typename() + " failed to allocate " + std::to_string(allocator_size) + " bytes of memory");
 		throw ex;
 	}
@@ -85,7 +81,7 @@ allocator_red_black_tree::allocator_red_black_tree(
 	get_left_ptr(first_free_block) = nullptr;
 	get_right_ptr(first_free_block) = nullptr;
 
-	debug_with_guard(get_typename() + " constructor with parameters completed successfully");
+	debug_with_guard(get_typename() + " constructor finished");
 }
 
 [[nodiscard]] void *allocator_red_black_tree::allocate(
@@ -94,15 +90,15 @@ allocator_red_black_tree::allocator_red_black_tree(
 {
 	std::lock_guard<std::mutex> lock(get_mutex());
 
-	debug_with_guard(get_typename() + " allocate with value_size = " + std::to_string(value_size) + "; values_count = " +
+	debug_with_guard(get_typename() + " allocating with pool size = " + std::to_string(value_size) + "; values_count = " +
 					 std::to_string(values_count) + "; Now it is having " + std::to_string(get_free_size()) + " bytes");
 
 	size_t need_mem = value_size * values_count;
 
 	block_pointer_t find_new_free_block;
 
-	switch(get_fit_mode())
-	{
+	// getting fit mode
+	switch(get_fit_mode()) {
 		case allocator_with_fit_mode::fit_mode::first_fit:
 			find_new_free_block = get_first_suitable(need_mem);
 			break;
@@ -114,9 +110,9 @@ allocator_red_black_tree::allocator_red_black_tree(
 			break;
 	}
 
-	if(find_new_free_block == nullptr)
-	{
-		error_with_guard(get_typename() + "No suitable block found for " + std::to_string(need_mem) + " bytes");
+	// if didnt find exact block
+	if(find_new_free_block == nullptr) {
+		error_with_guard(get_typename() + "didnt find block for " + std::to_string(need_mem) + " bytes");
 		throw std::bad_alloc();
 	}
 
@@ -129,20 +125,16 @@ allocator_red_black_tree::allocator_red_black_tree(
 	size_t free_block_size = get_size_block(find_new_free_block, _trusted_memory);
 
 
-	if(free_block_size < need_mem + get_free_block_size_of_meta())
-	{
+	if (free_block_size < need_mem + get_free_block_size_of_meta()) {
 		need_mem = free_block_size;
-		warning_with_guard("Allocator red black tree changed allocating block size to " + std::to_string(need_mem));
-	}
-	else
-	{
+		warning_with_guard("resizing for allocator " + std::to_string(need_mem));
+	} else {
 		void* new_free = reinterpret_cast<unsigned char*>(find_new_free_block) + get_occupied_block_size_of_meta() + need_mem;
 
 		get_forward_ptr(new_free) = get_forward_ptr(find_new_free_block);
 		get_back_ptr(new_free) = find_new_free_block;
 		get_forward_ptr(find_new_free_block) = new_free;
-		if(get_forward_ptr(new_free) != nullptr)
-		{
+		if(get_forward_ptr(new_free) != nullptr) {
 			get_back_ptr(get_forward_ptr(new_free)) = new_free;
 		}
 		get_byte_occupied_color(new_free).is_occupied = false;
@@ -159,39 +151,35 @@ allocator_red_black_tree::allocator_red_black_tree(
 }
 
 
-void allocator_red_black_tree::deallocate(
-		void *at)
+void allocator_red_black_tree::deallocate(void *at)
 {
 	std::lock_guard<std::mutex> lock(get_mutex());
 
-	debug_with_guard("Start deallocate " + get_typename());
+	debug_with_guard("Deallocation started " + get_typename());
 
 	void* block_ptr = reinterpret_cast<unsigned char*>(at) - get_occupied_block_size_of_meta();
 
-	if(get_parent(block_ptr) != _trusted_memory)
-	{
-		error_with_guard("Invalid memory block");
-		throw std::logic_error("Logic error: The received memory block does not belong to this allocator");
+	if(get_parent(block_ptr) != _trusted_memory) {
+		error_with_guard("invalid block caught");
+		throw std::logic_error("this memory is not from this allocator");
 	}
 
-	debug_with_guard("This block before deallocate " + get_dump(reinterpret_cast<char*>(at), get_size_block(block_ptr, _trusted_memory)));
+	debug_with_guard("block before deallocation " + get_dump(reinterpret_cast<char*>(at), get_size_block(block_ptr, _trusted_memory)));
 
 	get_byte_occupied_color(block_ptr).is_occupied = false;
 
-	//слияние с предыдущим
-	if(get_back_ptr(block_ptr) != nullptr && !get_byte_occupied_color(get_back_ptr(block_ptr)).is_occupied)
-	{
+	// merging with prev
+	if(get_back_ptr(block_ptr) != nullptr && !get_byte_occupied_color(get_back_ptr(block_ptr)).is_occupied) {
 		void* tmp = block_ptr;
 		block_ptr = get_back_ptr(block_ptr);
 		remove_from_rb_tree(block_ptr);
 		get_forward_ptr(block_ptr) = get_forward_ptr(tmp);
-		if(get_forward_ptr(block_ptr) != nullptr)
-		{
+		if(get_forward_ptr(block_ptr) != nullptr) {
 			get_back_ptr(get_forward_ptr(block_ptr)) = block_ptr;
 		}
 	}
 
-	//слияние со следующим
+	// merging with next
 	if(get_forward_ptr(block_ptr) != nullptr && !get_byte_occupied_color(get_forward_ptr(block_ptr)).is_occupied)
 	{
 		void* tmp = get_forward_ptr(block_ptr);
@@ -204,11 +192,12 @@ void allocator_red_black_tree::deallocate(
 	}
 
 
+	//inserting to tree
 	insert_rb_tree(block_ptr);
 
-	trace_with_guard("deallocate from allocator finish");
-	information_with_guard("current available memory: " + std::to_string(get_free_size()));
-	information_with_guard(get_typename() + " current state of blocks: " + get_blocks_info_to_string(get_blocks_info()));
+	trace_with_guard("Deallocation finished!");
+	information_with_guard("AVAIL MEMORY: " + std::to_string(get_free_size()));
+	information_with_guard(get_typename() + " BLOCK STATUS: " + get_blocks_info_to_string(get_blocks_info()));
 }
 
 
@@ -314,10 +303,8 @@ void* allocator_red_black_tree::get_worst_suitable(size_t size) const noexcept
 	void* result = nullptr;
 	void* node = *get_first_block(_trusted_memory);
 
-	while(node != nullptr)
-	{
-		if(get_size_block(node, _trusted_memory) >= size)
-		{
+	while(node != nullptr) {
+		if(get_size_block(node, _trusted_memory) >= size) {
 			result = node;
 		}
 		node = get_right_ptr(node);
@@ -331,22 +318,18 @@ void* allocator_red_black_tree::get_best_suitable(size_t size) const noexcept
 	void* result = nullptr;
 	void* node = *get_first_block(_trusted_memory);
 
-	while(node != nullptr)
-	{
+	while(node != nullptr) {
 		size_t size_of_node = get_size_block(node, _trusted_memory);
-		if(size_of_node >= size)
-		{
+		if(size_of_node >= size) {
 			result = node;
 		}
-		if(size_of_node > size)
-		{
+		if(size_of_node > size) {
 			node = get_left_ptr(node);
-		}
-		else if(size_of_node < size)
-		{
+		} else if(size_of_node < size) {
 			node = get_right_ptr(node);
+		} else {
+			node = nullptr;
 		}
-		else node = nullptr;
 	}
 	return result;
 }
@@ -369,8 +352,7 @@ inline allocator::block_size_t allocator_red_black_tree::get_occupied_block_size
 
 inline size_t allocator_red_black_tree::get_size_block(void* current_block, void* trusted_memory) noexcept
 {
-	if(get_forward_ptr(current_block) == nullptr)
-	{
+	if(get_forward_ptr(current_block) == nullptr) {
 		return reinterpret_cast<unsigned char*>(trusted_memory) + get_allocator_size_of_meta() + get_size_full(trusted_memory) - reinterpret_cast<unsigned char*>(current_block) - get_occupied_block_size_of_meta();
 	}
 	return reinterpret_cast<unsigned char*>(get_forward_ptr(current_block)) - reinterpret_cast<unsigned char *>(current_block) - get_occupied_block_size_of_meta();
@@ -381,9 +363,10 @@ size_t allocator_red_black_tree::get_free_size() const noexcept
 {
 	size_t res = 0;
 
-	for (auto it = begin_iter(), end= end_iter(); it != end; ++it)
-	{
-		if (!it.is_occup()) res += it.size();
+	for (auto it = begin_iter(), end= end_iter(); it != end; ++it) {
+		if (!it.is_occup()) {
+			res += it.size();
+		}
 	}
 	return res;
 }
@@ -396,15 +379,12 @@ void allocator_red_black_tree::remove_from_rb_tree(void *current_block) noexcept
 	void* parent;
 	bool need_rebalance = false;
 
-	// Если удаляемый узел не имеет потомков
-	if(get_right_ptr(current_block) == nullptr && get_left_ptr(current_block) == nullptr)
-	{
+	// if this node hasn`t childs
+	if(get_right_ptr(current_block) == nullptr && get_left_ptr(current_block) == nullptr) {
 		parent = get_parent(current_block);
 		update_parent_ptr(current_block, nullptr);
 		need_rebalance = get_byte_occupied_color(current_block)._color == color::BLACK;
-	}
-	else if(get_right_ptr(current_block) == nullptr || get_left_ptr(current_block) == nullptr)
-	{
+	} else if(get_right_ptr(current_block) == nullptr || get_left_ptr(current_block) == nullptr) {
 		void* button_node = get_right_ptr(current_block) != nullptr  ? get_right_ptr(current_block) : get_left_ptr(current_block);
 
 		get_byte_occupied_color(button_node)._color = color::BLACK;
@@ -412,14 +392,11 @@ void allocator_red_black_tree::remove_from_rb_tree(void *current_block) noexcept
 		update_parent_ptr(current_block, button_node);
 		get_parent(button_node) = get_parent(current_block);
 
-	}
-	else
-	{
+	} else {
 		void* change_node = get_left_ptr(current_block);
 
-		// Находим наибольший узел в левом поддереве
-		while(get_right_ptr(change_node) != nullptr)
-		{
+		//finding max in left subtree
+		while(get_right_ptr(change_node) != nullptr) {
 			change_node = get_right_ptr(change_node);
 		}
 
@@ -427,27 +404,23 @@ void allocator_red_black_tree::remove_from_rb_tree(void *current_block) noexcept
 
 		parent = get_parent(change_node);
 
-		if(get_byte_occupied_color(change_node)._color == color::BLACK && get_left_ptr(change_node) != nullptr)
-		{
+		if(get_byte_occupied_color(change_node)._color == color::BLACK && get_left_ptr(change_node) != nullptr) {
 			get_byte_occupied_color(get_left_ptr(change_node))._color = color::BLACK;
 		}
 
+		//updaint parents ptr
 		update_parent_ptr(current_block, change_node);
 		get_right_ptr(change_node) = get_right_ptr(current_block);
 		get_parent(get_right_ptr(change_node)) = change_node;
 
-		if(get_parent(change_node) != current_block)
-		{
+		if(get_parent(change_node) != current_block) {
 			update_parent_ptr(change_node, get_left_ptr(change_node));
-			if(get_left_ptr(change_node) != nullptr)
-			{
+			if(get_left_ptr(change_node) != nullptr) {
 				get_parent(get_left_ptr(change_node)) = get_parent(change_node);
 			}
 			get_left_ptr(change_node) = get_left_ptr(current_block);
 			get_parent(get_left_ptr(change_node)) = change_node;
-		}
-		else
-		{
+		} else {
 			parent = change_node;
 		}
 
@@ -456,26 +429,20 @@ void allocator_red_black_tree::remove_from_rb_tree(void *current_block) noexcept
 
 	}
 
-	if(need_rebalance)
-	{
+	//balancing if needed
+	if(need_rebalance) {
 		rebalance(parent);
 	}
 }
 
 void allocator_red_black_tree::update_parent_ptr(void* current_block, void* new_parent) noexcept
 {
-	if(get_parent(current_block) == nullptr)
-	{
+	if(get_parent(current_block) == nullptr) {
 		*get_first_block(_trusted_memory) = new_parent;
-	}
-	else
-	{
-		if(current_block == get_left_ptr(get_parent(current_block))) // is left child
-		{
+	} else {
+		if(current_block == get_left_ptr(get_parent(current_block))) { // if cur block is left child
 			get_left_ptr(get_parent(current_block)) = new_parent;
-		}
-		else
-		{
+		} else {
 			get_right_ptr(get_parent(current_block)) = new_parent;
 		}
 	}
@@ -483,59 +450,44 @@ void allocator_red_black_tree::update_parent_ptr(void* current_block, void* new_
 
 void allocator_red_black_tree::rebalance(void* parent, void* deleted)
 {
-	if(parent == nullptr)
-	{
-		// Если удаленный узел не nullptr, перекрашиваем его в черный цвет
-		if(deleted != nullptr)
-		{
+	if(parent == nullptr) {
+		//recoloring deleted node to black
+		if(deleted != nullptr) {
 			get_byte_occupied_color(deleted)._color = color::BLACK;
 		}
-	}
-	else
-	{
+	} else {
 		bool is_left = deleted == get_left_ptr(parent);
 
 		void* brother = is_left ? get_right_ptr(parent) : get_left_ptr(parent);
 
-		if(get_byte_occupied_color(brother)._color == color::RED)
-		{
+		if(get_byte_occupied_color(brother)._color == color::RED) {
 			is_left ? small_left_rotate(parent) : small_right_rotate(parent);
 
 			get_byte_occupied_color(parent)._color = color::RED;
 			get_byte_occupied_color(brother)._color = color::BLACK;
 
 			rebalance(parent, deleted);
-		}
-		else
-		{
+		} else {
 			void* far_cousin = is_left ? get_right_ptr(brother) : get_left_ptr(brother);
 			void* near_cousin = is_left ? get_left_ptr(brother) : get_right_ptr(brother);
 
-			if(far_cousin != nullptr && get_byte_occupied_color(far_cousin)._color == color::RED)
-			{
+			if(far_cousin != nullptr && get_byte_occupied_color(far_cousin)._color == color::RED) {
 				is_left ? small_left_rotate(parent) : small_right_rotate(parent);
 
 				get_byte_occupied_color(brother)._color = get_byte_occupied_color(parent)._color;
 				get_byte_occupied_color(parent)._color = color::BLACK;
 				get_byte_occupied_color(far_cousin)._color = color::BLACK;
-			}
-			else if(near_cousin != nullptr && get_byte_occupied_color(near_cousin)._color == color::RED)
-			{
+			} else if(near_cousin != nullptr && get_byte_occupied_color(near_cousin)._color == color::RED) {
 				is_left ? big_left_rotate(parent) : big_right_rotate(parent);
 
 				get_byte_occupied_color(near_cousin)._color = get_byte_occupied_color(parent)._color;
 				get_byte_occupied_color(parent)._color = color::BLACK;
-			}
-			else
-			{
+			} else {
 				get_byte_occupied_color(brother)._color = color::RED;
 
-				if(get_byte_occupied_color(parent)._color == color::RED)
-				{
+				if(get_byte_occupied_color(parent)._color == color::RED) {
 					get_byte_occupied_color(parent)._color = color::BLACK;
-				}
-				else
-				{
+				} else {
 					rebalance(get_parent(parent), parent);
 				}
 			}
@@ -543,11 +495,10 @@ void allocator_red_black_tree::rebalance(void* parent, void* deleted)
 	}
 }
 
-
+//rotated implementations
 void allocator_red_black_tree::small_right_rotate(void* root) noexcept
 {
-	if(get_left_ptr(root) != nullptr )
-	{
+	if(get_left_ptr(root) != nullptr ) {
 		void* left_son = get_left_ptr(root);
 		update_parent_ptr(root, left_son);
 		get_parent(left_son) = get_parent(root);
@@ -555,8 +506,7 @@ void allocator_red_black_tree::small_right_rotate(void* root) noexcept
 		get_right_ptr(left_son) = root;
 		get_parent(root) = left_son;
 		get_left_ptr(root) = right_son_of_left_son_of_joint;
-		if(right_son_of_left_son_of_joint != nullptr)
-		{
+		if(right_son_of_left_son_of_joint != nullptr) {
 			get_parent(right_son_of_left_son_of_joint) = root;
 		}
 
@@ -565,8 +515,7 @@ void allocator_red_black_tree::small_right_rotate(void* root) noexcept
 
 void allocator_red_black_tree::small_left_rotate(void* root) noexcept
 {
-	if(get_right_ptr(root) != nullptr)
-	{
+	if(get_right_ptr(root) != nullptr) {
 		void* right_son = get_right_ptr(root);
 		update_parent_ptr(root, right_son);
 		get_parent(right_son) = get_parent(root);
@@ -574,8 +523,7 @@ void allocator_red_black_tree::small_left_rotate(void* root) noexcept
 		get_left_ptr(right_son) = root;
 		get_parent(root) = right_son;
 		get_right_ptr(root) = left_son_of_right_son_of_joint;
-		if(left_son_of_right_son_of_joint != nullptr)
-		{
+		if(left_son_of_right_son_of_joint != nullptr) {
 			get_parent(left_son_of_right_son_of_joint) = root;
 		}
 	}
@@ -583,8 +531,7 @@ void allocator_red_black_tree::small_left_rotate(void* root) noexcept
 
 void allocator_red_black_tree::big_right_rotate(void* root) noexcept
 {
-	if(get_left_ptr(root) != nullptr && get_right_ptr(get_left_ptr(root)) != nullptr)
-	{
+	if(get_left_ptr(root) != nullptr && get_right_ptr(get_left_ptr(root)) != nullptr) {
 		void* node = get_left_ptr(root);
 
 		small_left_rotate(node);
@@ -594,8 +541,7 @@ void allocator_red_black_tree::big_right_rotate(void* root) noexcept
 
 void allocator_red_black_tree::big_left_rotate(void *root) noexcept
 {
-	if(get_right_ptr(root) != nullptr && get_left_ptr(get_right_ptr(root)) != nullptr)
-	{
+	if(get_right_ptr(root) != nullptr && get_left_ptr(get_right_ptr(root)) != nullptr) {
 		void* node = get_right_ptr(root);
 
 		small_right_rotate(node);
@@ -603,14 +549,15 @@ void allocator_red_black_tree::big_left_rotate(void *root) noexcept
 	}
 }
 
+
+//inserting
 void allocator_red_black_tree::insert_rb_tree(void* current_block) noexcept
 {
 	void* root = *get_first_block(_trusted_memory);
 	void* parent = nullptr;
 
-	// Поиск места для вставки нового узла
-	while(root != nullptr)
-	{
+	//finding place
+	while(root != nullptr) {
 		if(get_size_block(current_block, _trusted_memory) < get_size_block(root, _trusted_memory))
 		{
 			parent = root;
@@ -623,7 +570,7 @@ void allocator_red_black_tree::insert_rb_tree(void* current_block) noexcept
 		}
 	}
 
-	// Установка указателей на родителя и потомков для нового узла
+	// getting exact ptrs to family
 	get_parent(current_block) = parent;
 	get_left_ptr(current_block) = nullptr;
 	get_right_ptr(current_block) = nullptr;
@@ -631,25 +578,19 @@ void allocator_red_black_tree::insert_rb_tree(void* current_block) noexcept
 	get_byte_occupied_color(current_block).is_occupied = false;
 	get_byte_occupied_color(current_block)._color = color::RED;
 
-	// Если новый узел является корнем дерева
-	if(parent == nullptr)
-	{
+	// if node == root
+	if(parent == nullptr) {
 		*get_first_block(_trusted_memory) = current_block;
-	}
-	else
-	{
+	} else {
 		// Установка нового узла как правого или левого потомка родителя
-		if(get_size_block(current_block, _trusted_memory) >= get_size_block(parent, _trusted_memory))
-		{
+		if(get_size_block(current_block, _trusted_memory) >= get_size_block(parent, _trusted_memory)) {
 			get_right_ptr(parent) = current_block;
-		}
-		else
-		{
+		} else {
 			get_left_ptr(parent) = current_block;
 		}
 	}
 
-	// Если новый узел является корнем дерева, перекрашиваем его в черный цвет и выходим
+	// if node == root, then recolor and exit
 	if(parent == nullptr)
 	{
 		get_byte_occupied_color(current_block)._color = color::BLACK;
@@ -658,19 +599,15 @@ void allocator_red_black_tree::insert_rb_tree(void* current_block) noexcept
 
 	bool is_left = current_block == get_left_ptr(parent);
 
-	// Восстановление свойств красно-черного дерева
-	while(true)
-	{
-		if(get_byte_occupied_color(parent)._color == color::BLACK)
-		{
+	// balancing after inserting
+	while(true) {
+		if(get_byte_occupied_color(parent)._color == color::BLACK) {
 			break;
 		}
-		if(get_byte_occupied_color(parent)._color == color::RED)
-		{
+		if(get_byte_occupied_color(parent)._color == color::RED) {
 			void* grand = get_parent(parent);
 
-			if(get_right_ptr(grand) == parent)
-			{
+			if(get_right_ptr(grand) == parent){
 				if((get_left_ptr(grand) == nullptr || get_byte_occupied_color(get_left_ptr(grand))._color == color::BLACK) && !is_left)
 				{
 					get_byte_occupied_color(grand)._color = color::RED;
@@ -719,7 +656,7 @@ void allocator_red_black_tree::insert_rb_tree(void* current_block) noexcept
 			}
 		}
 
-		// Если текущий узел стал корнем, перекрашиваем его в черный цвет и выходим
+		// if current_block == root, recolor to black
 		if(get_parent(current_block) == nullptr)
 		{
 			get_byte_occupied_color(current_block)._color = color::BLACK;
@@ -736,8 +673,7 @@ std::vector<allocator_test_utils::block_info> allocator_red_black_tree::get_bloc
 {
 	std::vector<allocator_test_utils::block_info> result;
 
-	for(auto it = begin_iter(), end = end_iter(); it != end; ++it)
-	{
+	for(auto it = begin_iter(), end = end_iter(); it != end; ++it) {
 		result.push_back({it.size(), it.is_occup()});
 	}
 
@@ -748,8 +684,7 @@ std::vector<allocator_test_utils::block_info> allocator_red_black_tree::get_bloc
 std::string allocator_red_black_tree::get_blocks_info_to_string(const std::vector<allocator_test_utils::block_info>& vector) const noexcept
 {
 	std::ostringstream str;
-	for(auto& it : vector)
-	{
+	for(auto& it : vector) {
 		if(it.is_block_occupied) str << "<occup>";
 		else str << "<avail>";
 
@@ -770,8 +705,9 @@ inline void allocator_red_black_tree::set_fit_mode(
 std::string allocator_red_black_tree::get_dump(char* at, size_t size)
 {
 	std::string result;
-	for(size_t i = 0; i < size; ++i)
+	for(size_t i = 0; i < size; ++i) {
 		result += std::to_string(static_cast<int>(at[i])) + " ";
+	}
 	return result;
 }
 

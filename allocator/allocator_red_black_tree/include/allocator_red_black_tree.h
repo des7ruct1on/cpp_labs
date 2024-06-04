@@ -37,17 +37,13 @@ public:
 
     ~allocator_red_black_tree() override;
 
-    allocator_red_black_tree(
-        allocator_red_black_tree const &other) = delete;
+    allocator_red_black_tree(allocator_red_black_tree const &other) = delete;
 
-    allocator_red_black_tree &operator=(
-        allocator_red_black_tree const &other) = delete;
+    allocator_red_black_tree &operator=(allocator_red_black_tree const &other) = delete;
 
-    allocator_red_black_tree(
-        allocator_red_black_tree &&other) noexcept;
+    allocator_red_black_tree(allocator_red_black_tree &&other) noexcept;
 
-    allocator_red_black_tree &operator=(
-        allocator_red_black_tree &&other) noexcept;
+    allocator_red_black_tree &operator=(allocator_red_black_tree &&other) noexcept;
 
 public:
 
@@ -63,13 +59,11 @@ public:
         size_t value_size,
         size_t values_count) override;
 
-    void deallocate(
-        void *at) override;
+    void deallocate(void *at) override;
 
 public:
 
-    inline void set_fit_mode(
-        allocator_with_fit_mode::fit_mode mode) override;
+    inline void set_fit_mode(allocator_with_fit_mode::fit_mode mode) override;
 
 public:
 
@@ -140,12 +134,11 @@ private:
 
 	void big_left_rotate(void* root) noexcept;
 
-	class iterator
-	{
+	class iterator {
 		void* trusted_mem ;
 		void* _ptr;
 
-		public:
+	public:
 
 		iterator();
 

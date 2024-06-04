@@ -30,6 +30,7 @@ logger *create_logger(
 
 TEST(positive_tests, test1)
 {
+    std::cout << "tut1\n";
     logger *logger = create_logger(std::vector<std::pair<std::string, logger::severity>>
         {
             {
@@ -41,13 +42,17 @@ TEST(positive_tests, test1)
     big_integer bigint_1("32850346459076457453464575686784654");
     big_integer bigint_2("423534596495087569087908753095322");
     big_integer result_of_sum = bigint_1 + bigint_2;
-    
+    std::cout << "tut2\n";
+    std::cout << "tut2\n";
     std::stringstream ss;
+    std::cout << "tut2\n";
     ss << result_of_sum;
+    std::cout << "tut2\n";
     std::string result_string = ss.str();
-    
+    std::cout << "tut2\n";
+    std::cout << "tut3\n";
     EXPECT_TRUE(result_string == "33273881055571545022552484439879976");
-    
+    std::cout << "tut4\n";
     delete logger;
 }
 

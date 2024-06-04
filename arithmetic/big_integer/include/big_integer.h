@@ -13,8 +13,7 @@
 #include <cstdint>
 #include <limits>
 
-class big_integer final:
-    allocator_guardant
+class big_integer final: allocator_guardant
 {
 
 public:
@@ -351,7 +350,17 @@ public:
     inline int get_size() const noexcept;
 
     big_integer &change_sign();
+
+    big_integer abs(big_integer const &number) noexcept;
     
+    big_integer max(big_integer const &one, big_integer const &another) noexcept;
+    
+    big_integer min(big_integer const &one, big_integer const &another) noexcept;
+    
+    big_integer factorial(big_integer const &number);
+    
+    inline bool is_one() const noexcept;
+
 private:
 
     std::vector<int> convert_string_to_vector(std::string value_as_string, size_t index);

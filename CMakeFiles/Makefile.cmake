@@ -226,6 +226,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "arithmetic/big_integer/tests/trivial_multiplication/CMakeFiles/mp_os_arthmtc_bg_intgr_tests_trvl_mltplctn.dir/DependInfo.cmake"
   "arithmetic/continued_fraction/CMakeFiles/mp_os_arthmtc_cntnd_frctn.dir/DependInfo.cmake"
   "arithmetic/fraction/CMakeFiles/mp_os_arthmtc_frctn.dir/DependInfo.cmake"
+  "arithmetic/fraction/tests/CMakeFiles/mp_os_artmtc_frctn_tests.dir/DependInfo.cmake"
   "associative_container/CMakeFiles/mp_os_assctv_cntnr.dir/DependInfo.cmake"
   "associative_container/search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr.dir/DependInfo.cmake"
   "associative_container/search_tree/binary_search_tree/CMakeFiles/mp_os_assctv_cntnr_srch_tr_bnr_srch_tr.dir/DependInfo.cmake"
