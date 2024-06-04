@@ -83,7 +83,7 @@ std::string string_mult(const std::string & first, const std::string & second)
 std::string string_divide(const std::string & first, const std::string & second) 
 {
     if (second == "0") {
-        throw std::logic_error("Division by zero is not defined\n");
+        throw std::logic_error("division by 0!!!\n");
     }
     if (first == "0") {
         return "0";
@@ -127,7 +127,7 @@ std::string string_divide(const std::string & first, const std::string & second)
 std::string string_pow(uint num, const std::string &base)
 {
     if (num == 0 && base == "0") {
-        throw std::runtime_error("0^0 is undefined\n");
+        throw std::runtime_error("0^0 caught\n");
     }
 
     if (num == 0) {
@@ -167,9 +167,9 @@ std::string big_integer::big_integer_to_string(big_integer const & value) const
     }
 
     if (value.sign()  < 0) {
-        int old_d = value._oldest_digit;
-        old_d = old_d ^ (1 << ((sizeof(int) << 3) - 1));
-        std::string mystr = std::to_string(old_d);
+        int tmp = value._oldest_digit;
+        tmp = tmp ^ (1 << ((sizeof(int) << 3) - 1));
+        std::string mystr = std::to_string(tmp);
         res = string_add(res, string_mult(mystr, string_pow(i - 1, std::to_string(MAX_VAL_BASE))));
         res = "-" + res;
     } else {
@@ -212,23 +212,23 @@ int char_to_int(char c)
     } else if (c >= 'a' and c <= 'z') {
         return c - 'a' + 10;
     }
-    throw std::invalid_argument("Invalid character in string\n");
+    throw std::invalid_argument("invalid char\n");
 }
 
 std::string big_integer::string_to_decimal(const std::string& number, int base) 
 {
     if (base < 2 or base > 36) {
-        throw std::invalid_argument("Base must be in the range [2...36]");
+        throw std::invalid_argument("base is not in [2, 36]");
     }
     std::string result = "0";
     int power = 0;
 
     for (int i = number.size() - 1; i >= 0; --i) {
-        int digitValue = char_to_int(number[i]);
-        if (digitValue >= base) {
-            throw std::invalid_argument("Invalid character in the number for the given base");
+        int digit = char_to_int(number[i]);
+        if (digit >= base) {
+            throw std::invalid_argument("invalid char");
         }
-        std::string tmp = string_mult(string_pow(power, std::to_string(base)), std::to_string(digitValue));
+        std::string tmp = string_mult(string_pow(power, std::to_string(base)), std::to_string(digit));
         result = string_add(result, tmp);
         ++power;
     }
@@ -271,6 +271,7 @@ big_integer &big_integer::trivial_multiplication::multiply(
     big_integer result(std::vector<int> {0});
     big_integer multiplication_result(std::vector<int> {0});
 
+    // multiplying by O(n^2)
     for (auto i = 0; i < first_size; ++i) {
         uint first_number_low = first_multiplier.get_digit(i) & mask;
         uint first_number_high = first_multiplier.get_digit(i) >> shift;
@@ -298,7 +299,9 @@ big_integer &big_integer::trivial_multiplication::multiply(
     
     first_multiplier = std::move(result);
 
-    if (negative) first_multiplier.change_sign();
+    if (negative) {
+        first_multiplier.change_sign();
+    }
     return first_multiplier;
 }
 
@@ -320,6 +323,7 @@ big_integer &big_integer::Schonhage_Strassen_multiplication::multiply(
 
 inline unsigned int big_integer::get_digit_big_endian(int position) const noexcept
 {
+    // just getting last digit in big endian notation
     if (_other_digits == nullptr) {
         return position == 0 ? _oldest_digit : 0;
     }
@@ -414,7 +418,7 @@ big_integer &big_integer::trivial_division::modulo(
     big_integer::multiplication_rule multiplication_rule) const
 {
     if (divisor.is_zero()) {
-        throw std::logic_error("Division by zero is not defined\n");
+        throw std::logic_error("division by zero\n");
     }
     if (dividend.is_zero()) {
         return dividend;
@@ -570,6 +574,8 @@ std::vector<int> big_integer::convert_string_to_vector(std::string value_as_stri
     return result;
 }
 
+
+// converting to base from 3sem
 std::vector<int> big_integer::convert_to_base(std::string const &value_as_string, size_t base)
 {
     int pos = 0;
@@ -591,8 +597,7 @@ std::vector<int> big_integer::convert_to_base(std::string const &value_as_string
 
 }
 
-void big_integer::copy_from(
-    big_integer const &other)
+void big_integer::copy_from(big_integer const &other)
 {
     _oldest_digit = other._oldest_digit;
     _other_digits = nullptr;
@@ -613,16 +618,17 @@ void big_integer::initialize_from(
     size_t digits_count)
 {
     if (!digits) {
-        throw std::logic_error("Pointer to digits array must not be nullptr\n");
+        throw std::logic_error("array if of digita is null\n");
     }
     if (digits_count < 1) {
-        throw std::logic_error("Digits array length must be at least 1\n");
+        throw std::logic_error("invalid digit counts\n");
     }
 
     _oldest_digit = digits[digits_count - 1];
     if (digits_count == 1) {
         return;
     }
+    // allocating
     try {
         _other_digits = static_cast<uint *>(allocate_with_guard(sizeof(uint), digits_count));
     } catch(const std::bad_alloc& e) {
@@ -638,7 +644,7 @@ void big_integer::initialize_from(
     size_t digits_count)
 {
     if (digits.empty() || !digits_count) {
-        throw std::logic_error("std::vector<int> of digits should not be empty\n");
+        throw std::logic_error("vector is empty!\n");
     }
     _oldest_digit = digits[digits_count - 1];
     if (digits_count == 1) {
@@ -702,6 +708,41 @@ big_integer::big_integer(uint number)
     _oldest_digit = 0;
 }
 
+big_integer big_integer::abs(big_integer const &number) noexcept 
+{ 
+    return number >= big_integer("0") ? number : -number; 
+} 
+ 
+big_integer big_integer::max(big_integer const &one, big_integer const &another) noexcept 
+{ 
+    return one > another ? one : another; 
+} 
+ 
+big_integer big_integer::min(big_integer const &one, big_integer const &another) noexcept 
+{ 
+    return one < another ? one : another; 
+} 
+ 
+big_integer big_integer::factorial(big_integer const &number) 
+{ 
+    if (number < big_integer("0")) 
+    { 
+        throw std::invalid_argument("negative number caught!"); 
+    } 
+     
+    if (number.is_zero() || number.is_one()) 
+    { 
+        return big_integer("1"); 
+    } 
+ 
+    return number * factorial(number - big_integer("1")); 
+} 
+ 
+inline bool big_integer::is_one() const noexcept 
+{ 
+    return _oldest_digit == 1 && _other_digits == nullptr; 
+}
+
 big_integer::big_integer(std::vector<unsigned int> const &digits)
 {
     int digits_count = digits.size();
@@ -710,7 +751,7 @@ big_integer::big_integer(std::vector<unsigned int> const &digits)
     _other_digits = nullptr;
 
     if (digits_count == 0) {
-        throw std::logic_error("std::vector<int> of digits should not be empty");
+        throw std::logic_error("vector is empty!!!");
     }
     if (digits[digits_count - 1] < default_base) {
         _oldest_digit = digits[digits_count - 1];
@@ -765,6 +806,7 @@ big_integer &big_integer::operator=(
     return *this;
 }
 
+//move operation
 big_integer::big_integer(
     big_integer &&other) noexcept
 {
@@ -849,6 +891,8 @@ big_integer big_integer::operator-() const
     return big_integer(*this).change_sign();
 }
 
+
+//plus in stolbik
 big_integer &big_integer::operator+=(
     big_integer const &other)
 {
@@ -1039,13 +1083,14 @@ big_integer big_integer::operator/(
     }
     return tmp /= other.first;
 }
-
+//rem
 big_integer &big_integer::operator%=(
     big_integer const &other)
 {
     return modulo(*this, other);
 }
 
+//rem
 big_integer big_integer::operator%(
     big_integer const &other) const
 {
@@ -1325,17 +1370,21 @@ big_integer &big_integer::multiply(
     switch (multiplication_rule) {
         case multiplication_rule::trivial:
             try {
-                if (allocator) _mult = static_cast<big_integer::trivial_multiplication *>(allocator->allocate(sizeof(big_integer::trivial_multiplication), 1));
-                else _mult = new big_integer::trivial_multiplication;
-            }
-            catch(const std::bad_alloc& e)
-            {
+                if (allocator) {
+                    _mult = static_cast<big_integer::trivial_multiplication *>(allocator->allocate(sizeof(big_integer::trivial_multiplication), 1));
+                } else {
+                    _mult = new big_integer::trivial_multiplication;
+                }
+            } catch(const std::bad_alloc& e) {
                 throw e;
             }
             first_multiplier = _mult->multiply(first_multiplier, second_multiplier);
     }
-    if (allocator) allocator->deallocate(_mult);
-    else delete _mult;
+    if (allocator) {
+        allocator->deallocate(_mult);
+    } else {
+        delete _mult;
+    }
     return first_multiplier;
 }
 
@@ -1350,13 +1399,13 @@ big_integer big_integer::multiply(
     switch (multiplication_rule)
     {
         case multiplication_rule::trivial:
-            try
-            {
-                if (allocator) _mult = static_cast<big_integer::trivial_multiplication *>(allocator->allocate(sizeof(big_integer::trivial_multiplication), 1));
-                else _mult = new big_integer::trivial_multiplication;
-            }
-            catch(const std::bad_alloc& e)
-            {
+            try {
+                if (allocator) {
+                    _mult = static_cast<big_integer::trivial_multiplication *>(allocator->allocate(sizeof(big_integer::trivial_multiplication), 1));
+                } else {
+                    _mult = new big_integer::trivial_multiplication;
+                }
+            } catch(const std::bad_alloc& e) {
                 throw e;
             }
             *tmp = first_multiplier;
@@ -1375,16 +1424,15 @@ big_integer &big_integer::divide(
     big_integer::multiplication_rule multiplication_rule)
 {
     big_integer::division * _div;
-    switch (division_rule)
-    {
+    switch (division_rule) {
         case division_rule::trivial:
-            try
-            {
-                if (allocator) _div = static_cast<big_integer::trivial_division *>(allocator->allocate(sizeof(big_integer::trivial_division), 1));
-                else _div = new big_integer::trivial_division;
-            }
-            catch(const std::bad_alloc& e)
-            {
+            try {
+                if (allocator) {
+                    _div = static_cast<big_integer::trivial_division *>(allocator->allocate(sizeof(big_integer::trivial_division), 1));
+                } else {
+                    _div = new big_integer::trivial_division;
+                }
+            } catch(const std::bad_alloc& e) {
                 throw e;
             }
             dividend =_div->divide(dividend, divisor, multiplication_rule);
@@ -1436,13 +1484,13 @@ big_integer &big_integer::modulo(
     switch (division_rule)
     {
         case division_rule::trivial:
-            try
-            {
-                if (allocator) _div = static_cast<big_integer::trivial_division *>(allocator->allocate(sizeof(big_integer::trivial_division), 1));
-                else _div = new big_integer::trivial_division;
-            }
-            catch(const std::bad_alloc& e)
-            {
+            try {
+                if (allocator) {
+                    _div = static_cast<big_integer::trivial_division *>(allocator->allocate(sizeof(big_integer::trivial_division), 1));
+                } else {
+                    _div = new big_integer::trivial_division;
+                }
+            } catch(const std::bad_alloc& e) {
                 throw e;
             }
             return _div->modulo(dividend, divisor, multiplication_rule);
@@ -1457,16 +1505,15 @@ big_integer big_integer::modulo(
     big_integer::multiplication_rule multiplication_rule)
 {
     big_integer::division * _div;
-    switch (division_rule)
-    {
+    switch (division_rule) {
         case division_rule::trivial:
-            try
-            {
-                if (allocator) _div = static_cast<big_integer::trivial_division *>(allocator->allocate(sizeof(big_integer::trivial_division), 1));
-                else _div = new big_integer::trivial_division;
-            }
-            catch(const std::bad_alloc& e)
-            {
+            try {
+                if (allocator) {
+                    _div = static_cast<big_integer::trivial_division *>(allocator->allocate(sizeof(big_integer::trivial_division), 1));
+                } else {
+                    _div = new big_integer::trivial_division;
+                }
+            } catch(const std::bad_alloc& e) {
                 throw e;
             }
             big_integer tmp(dividend);
@@ -1508,17 +1555,24 @@ inline bool big_integer::is_zero() const noexcept
 
 inline int big_integer::sign() const noexcept
 {
-    if (is_zero()) return 0;
+    if (is_zero()) {
+        return 0;
+    }
     return 1 - (static_cast<int>((*reinterpret_cast<uint const *>(&_oldest_digit) >> ((sizeof(int) << 3) - 1))) << 1);
 }
 
 inline uint big_integer::get_digit(int index) const noexcept
 {
-    if (!_other_digits) return index == 0 ? _oldest_digit : 0;
-
+    if (!_other_digits) {
+        return index == 0 ? _oldest_digit : 0;
+    }
     int const digits_count = get_size();
-    if (index < digits_count - 1) return _other_digits[index + 1];
-    if (index == digits_count - 1) return _oldest_digit;
+    if (index < digits_count - 1) {
+        return _other_digits[index + 1];
+    }
+    if (index == digits_count - 1) {
+        return _oldest_digit;
+    }
 
     return 0;
 }
